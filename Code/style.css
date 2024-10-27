@@ -11,7 +11,8 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center; 
+    padding-bottom: 48px;}
 h1 {
     font-size: 96px;
     font-weight: bold;
@@ -35,5 +36,9 @@ h3 {
         text-decoration: none;
         color:darkblue ; }
 
+a {
+    font-size: 24px;
+    font-weight: bold;
+    color:darkblue ; }
 
 
