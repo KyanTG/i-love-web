@@ -1,4 +1,20 @@
 html {
- background-color: red;
+ background-color: white;
+ height: 100vh; }
 
-}
+a {
+ text-decoration: none; }
+
+
+
+
+header {
+ display:flex;
+ justify-content: center; 
+
+  nav {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+  } }
+
