@@ -2,18 +2,98 @@ html {
  background-color: beige;
  height: 100vh; }
 
- @font-face {
+ /* @font-face {
     font-family: 'HelemaalMooiFont' ;
-    src: url("HelemaalMooiFont.otf") format("opentype");
-}
+    src: url("HelemaalMooiFont.otf") format("opentype"); } */
 
  body {
-  font-family: "HelemaalMooiFont";
- }
+  font-family: "HelemaalMooiFont"; }
 
 header {
- display:flex;
- justify-content: center; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+
+    nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        translate: 100%;
+        transition: 0.1s; } }
+
+    nav.toonmenu {
+
+        translate:0% }
+
+    ul {
+        display: flex;
+        align-items: center; }
+        
+        li {
+            list-style: none; }
+   
+.nav-icon {
+    position: relative;
+    width: 64px;
+    height: 32px;
+    cursor: pointer; }
+
+.nav-icon span {
+    position: absolute;
+    width: 50%;
+    height: 6px;
+    background: black;
+    transition: all 0.3s ease-in-out; }
+
+.nav-icon span:nth-child(odd) {
+    left: 0;
+    border-radius: 9px 0 0 9px; }
+
+.nav-icon span:nth-child(odd) {
+    left: 0;
+    border-radius: 0 9px 9px 0; }
+
+.nav-icon span:nth-child(1), .nav-icon span:nth-child(2) {
+    top:0; }
+
+.nav-icon span:nth-child(3), .nav-icon span:nth-child(4) {
+    top:13px; }   
+    
+.nav-icon span:nth-child(5), .nav-icon span:nth-child(6) {
+    top:26px; }  
+    
+.nav-open .nav-icon span:nth-child(1), .nav-open .nav-icon span:nth-child(6) {
+    transform: rotate(45deg); }
+
+.nav-open .nav-icon span:nth-child(2), .nav-open .nav-icon span:nth-child(5) {
+    transform: rotate(-45deg); }  
+
+.nav-open .nav-icon span:nth-child(1) {
+    top: 8px;
+    left: 5px; }
+
+.nav-open .nav-icon span:nth-child(2) {
+    top: 8px;
+    left: calc(50% - 5px); }
+
+.nav-open .nav-icon span:nth-child(3) {
+    top: -100%;
+    opacity: 0; }
+
+.nav-open .nav-icon span:nth-child(4) { 
+    left: 150%;
+    opacity: 0; }
+
+.nav-open .nav-icon span:nth-child(5) { 
+    top: 19px;
+    left: 5px; }
+
+.nav-open .nav-icon span:nth-child(6) { 
+    top: 19px;
+    left: calc(50% - 5px); }
 
 article {
     display: flex;
@@ -21,6 +101,7 @@ article {
     justify-content: center;
     align-items: center; 
     padding-bottom: 48px;}
+    
 h1 {
     font-size: 96px;
     font-weight: bold;
