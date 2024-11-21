@@ -11,7 +11,7 @@ function openMenu() {
 
   deNav.classList.add("toonMenu"); }
 
-const sluitButton = document.querySelector("nav button");
+const sluitButton = document.querySelector("nav-icon");
 
 
 sluitButton.addEventListener("click", sluitMenu);
