@@ -6,10 +6,6 @@
     background-color: beige;
     height: 100vh; }
 
- /* @font-face {
-    font-family: 'HelemaalMooiFont' ;
-    src: url("HelemaalMooiFont.otf") format("opentype"); } */
-
  body {
   font-family: "HelemaalMooiFont"; }
 
@@ -21,20 +17,21 @@
     padding: 16px;
     
     nav {
-        width: 300px;
-        background-color: black;
+        width: 400px;
+        background-color: white;
         position: fixed;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
-        translate: -100% ;
-        transition: 0.1s;
-        padding-top: 100px; } }
+        translate: 100% ;
+        transition: 0.2s;
+        padding-top: 100px;
+        margin-left: auto; } }
 
     .nav-open {
         
-        translate: 0% !important; }
+        translate: 0%; }
 
     ul {
         display: flex;
@@ -49,7 +46,8 @@
     padding-right: 30px;
     padding-top: 30px; }     
 
-    .hamburger    {
+    .hamburger {
+        z-index: 9;
         position: relative;
         width: 42px;
         height: 32px;
@@ -60,7 +58,7 @@
             position: absolute;
             width: 50%;
             height: 6px;
-            background: black;
+            background: darkblue;
             transition: all 0.2s ease-in-out; }
         
         .hamburger span:nth-child(odd) {
@@ -120,16 +118,20 @@ article {
 h1 {
     font-size: 96px;
     font-weight: bold;
-    color:darkblue ; }
+    color:darkblue ; 
+    padding-top: 40px;
+    padding-bottom: 40px;}
 
 h2 {
     font-size: 48px;
     font-weight: bold;
-    color:darkblue ; }
+    color:darkblue ; 
+    padding-bottom: 40px;}
 
 h3 {
     font-size: 32px;
-    color: darkblue; }
+    color: darkblue;
+    padding-bottom: 40px; }
 
     p {
       
