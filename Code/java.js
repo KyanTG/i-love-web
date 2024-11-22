@@ -1,5 +1,6 @@
 
-const openButton = document.querySelector("nav-icon");
+
+const openButton = document.querySelector(".hamburger");
 
 
 openButton.addEventListener("click", openMenu);
@@ -9,14 +10,7 @@ function openMenu() {
 
   const deNav = document.querySelector("nav");
 
-  deNav.classList.add("toonMenu"); }
+  deNav.classList.toggle("nav-open"); }
 
-const sluitButton = document.querySelector("nav-icon");
+const sluitButton = document.querySelector(".hamburger-open");
 
-
-sluitButton.addEventListener("click", sluitMenu);
-
-
-function sluitMenu() {
-  const deNav = document.querySelector("nav");
-  deNav.classList.remove("toonMenu"); }
