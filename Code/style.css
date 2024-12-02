@@ -116,6 +116,7 @@ article {
     padding-bottom: 48px;}
     
 h1 {
+    font-family: "Quicksand";
     font-size: 96px;
     font-weight: bold;
     color:darkblue ; 
@@ -123,18 +124,20 @@ h1 {
     padding-bottom: 40px;}
 
 h2 {
+    font-family: "Quicksand";
     font-size: 48px;
     font-weight: bold;
     color:darkblue ; 
     padding-bottom: 40px;}
 
 h3 {
+    font-family: "Quicksand";
     font-size: 32px;
     color: darkblue;
     padding-bottom: 40px; }
 
     p {
-      
+        font-family: "Quicksand";
         text-align: center;
         max-width: 800px;
         font-size: 16px;
@@ -143,6 +146,7 @@ h3 {
         color:darkblue ; }
 
 a {
+    font-family: "Quicksand";
     font-size: 24px;
     font-weight: bold;
     color:darkblue ; }
