@@ -6,18 +6,14 @@
     background-color: beige;
     height: 100vh; }
 
- body {
-  font-family: "HelemaalMooiFont"; }
-
   header {
     position: sticky;
     top:0;
     background-color: transparent;
     z-index: 10; 
-    padding: 16px;
     
     nav {
-        width: 400px;
+        width: 330px;
         background-color: white;
         position: fixed;
         left: 0;
@@ -27,7 +23,9 @@
         translate: 100% ;
         transition: 0.2s;
         padding-top: 100px;
-        margin-left: auto; } }
+        margin-left: auto;
+        border-left: 5px solid black; } }
+
 
     .nav-open {
         
@@ -35,16 +33,18 @@
 
     ul {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         flex-direction: column; 
-        row-gap: 30px;}
+        margin-left: 16px ;
+        row-gap: 40px;}
         
         li {
             list-style: none; }
 
 .hamburger-class {
-    padding-right: 30px;
-    padding-top: 30px; }     
+    padding-right: 16px;
+    padding-top: 16px; }     
 
     .hamburger {
         z-index: 9;
@@ -54,59 +54,13 @@
         cursor: pointer; 
         margin-left: auto; }
 
-        .hamburger span {
-            position: absolute;
-            width: 50%;
-            height: 6px;
-            background: darkblue;
-            transition: all 0.2s ease-in-out; }
-        
-        .hamburger span:nth-child(odd) {
-            left: 0;
-            border-radius: 9px 0 0 9px; }
-        
-        .hamburger span:nth-child(even) {
-            left: 50%;
-            border-radius: 0 9px 9px 0; }
-        
-        .hamburger span:nth-child(1), .hamburger span:nth-child(2) {
-            top:0; }
-        
-        .hamburger span:nth-child(3), .hamburger span:nth-child(4) {
-            top:13px; }   
-            
-        .hamburger span:nth-child(5), .hamburger span:nth-child(6) {
-            top:26px; }  
-            
-        .hamburger-open .hamburger span:nth-child(1), .hamburger-open .hamburger span:nth-child(6) {
-            transform: rotate(45deg); }
-        
-        .hamburger-open .hamburger span:nth-child(2), .hamburger-open .hamburger span:nth-child(5) {
-            transform: rotate(-45deg); }  
-        
-        .hamburger-open .hamburger span:nth-child(1) {
-            top: 8px;
-            left: 5px; }
-        
-        .hamburger-open .hamburger span:nth-child(2) {
-            top: 8px;
-            left: calc(50% - 5px); }
-        
-        .hamburger-open .hamburger span:nth-child(3) {
-            left: calc(-100% - 5px); 
-            opacity: 0; }
-        
-        .hamburger-open .hamburger span:nth-child(4) { 
-            left: 150%;
-            opacity: 0; }
-        
-        .hamburger-open .hamburger span:nth-child(5) { 
-            top: 19px;
-            left: 5px; }
-        
-        .hamburger-open .hamburger span:nth-child(6) { 
-            top: 19px;
-            left: calc(50% - 5px); }
+    .hamburger span {
+        position: absolute;
+        width: 50%;
+        height: 6px;
+        background: black;
+        transition: all 0.2s ease-in-out; }
+
 
 article {
     display: flex;
@@ -117,9 +71,8 @@ article {
     
 h1 {
     font-family: "Quicksand";
-    font-size: 96px;
+    font-size: 48px;
     font-weight: bold;
-    color:darkblue ; 
     padding-top: 40px;
     padding-bottom: 40px;}
 
@@ -130,25 +83,79 @@ h2 {
     color:darkblue ; 
     padding-bottom: 40px;}
 
-h3 {
+h3, a {
     font-family: "Quicksand";
-    font-size: 24px;
-    color: darkblue;
-    padding-bottom: 40px; }
-
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;}
+  
     p {
         font-family: "Quicksand";
-        text-align: center;
-        max-width: 800px;
-        font-size: 16px;
-        font-weight: 500;
-        text-decoration: none;
-        color:darkblue ; }
+        font-size: 18px; }
 
-a {
-    font-family: "Quicksand";
-    font-size: 24px;
-    font-weight: bold;
-    color:darkblue ; }
+    a:hover, a:focus {
+        font-weight: 600;
+        transition: ease-in 0.1s; }
+
+@media screen and (min-width: 660px) {
+    
+    nav 
+    
+        { width: 440px !important; }
+
+    h1 
+    
+        { font-size: 96px;}
+    
+    .hamburger-class
+    
+        { padding-top: 32px;
+          padding-right: 32px;}}
 
 
+.hamburger span:nth-child(odd) {
+    left: 0;
+    border-radius: 9px 0 0 9px; }
+
+.hamburger span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9px 9px 0; }
+
+.hamburger span:nth-child(1), .hamburger span:nth-child(2) {
+    top:0; }
+
+.hamburger span:nth-child(3), .hamburger span:nth-child(4) {
+    top:13px; }   
+    
+.hamburger span:nth-child(5), .hamburger span:nth-child(6) {
+    top:26px; }  
+    
+.hamburger-open .hamburger span:nth-child(1), .hamburger-open .hamburger span:nth-child(6) {
+    transform: rotate(45deg); }
+
+.hamburger-open .hamburger span:nth-child(2), .hamburger-open .hamburger span:nth-child(5) {
+    transform: rotate(-45deg); }  
+
+.hamburger-open .hamburger span:nth-child(1) {
+    top: 8px;
+    left: 5px; }
+
+.hamburger-open .hamburger span:nth-child(2) {
+    top: 8px;
+    left: calc(50% - 5px); }
+
+.hamburger-open .hamburger span:nth-child(3) {
+    left: calc(-100% - 5px); 
+    opacity: 0; }
+
+.hamburger-open .hamburger span:nth-child(4) { 
+    left: 150%;
+    opacity: 0; }
+
+.hamburger-open .hamburger span:nth-child(5) { 
+    top: 19px;
+    left: 5px; }
+
+.hamburger-open .hamburger span:nth-child(6) { 
+    top: 19px;
+    left: calc(50% - 5px); }
