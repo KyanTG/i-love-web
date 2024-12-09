@@ -1,0 +1,6 @@
+p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    max-width: 800px;
+}
