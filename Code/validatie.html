@@ -1,0 +1,55 @@
+<form>
+    <fieldset>
+      <legend>Zoeken</legend>
+      <input required>
+      <button type="submit">Zoek!</button>
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <legend>Selecteer een optie</legend>
+  
+      <label><input type="radio" name="option" required> Optie 1</label>
+      <label><input type="radio" name="option" required> Optie 2</label>
+      <label><input type="radio" name="option" required> Optie 3</label>
+  
+      <input type="submit" value="Verstuur">
+    </fieldset>
+  </form>
+
+  <style>
+    fieldset:has(:user-invalid) {
+      background: #faa; }
+
+      button:hover {
+        
+      }
+    </style>
+
+
+  <script type="module">
+    // Stap 1: zoek de input en stop die in een variabele
+    let inputElement = document.querySelector('input');
+    
+    // Stap 2: luister naar het invalid event, en wacht tot dat afgevuurd wordt..
+    inputElement.addEventListener('invalid', function(ev) {
+    
+      // Stap 3: pas de tekst in de validatiemelding aan
+      inputElement.setCustomValidity('Dit veld mag niet leeg zijn hoor..');
+    
+    });
+    </script>
+
+<script type="module">
+    // Stap 1: zoek de input en stop die in een variabele
+    let inputRadio = document.querySelector('test');
+    
+    // Stap 2: luister naar het invalid event, en wacht tot dat afgevuurd wordt..
+    inputRadio.addEventListener('invalid', function(ev) {
+    
+      // Stap 3: pas de tekst in de validatiemelding aan
+      inputRadio.setCustomValidity('Dit veld mag niet leeg zijn hoor..');
+    
+    });
+    </script>
