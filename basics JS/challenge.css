@@ -1,9 +1,0 @@
-p {
-    --opa: 0.5s;
-    position: relative;
-    transition: 0.25s; 
-    opacity:var(--opa)}
-
-p.moveit {
-    translate: 10% 10%;
-    color: blue; }
