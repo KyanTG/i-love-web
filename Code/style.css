@@ -219,8 +219,8 @@ header {
 }
 
 @keyframes shoot-in {
-    from { margin-left: -100%; }
-    to { margin-left: 121.5%;}
+    from { transform:translateX(-120%) }
+    to { transform:translateX(145%) }
 }
 
     
