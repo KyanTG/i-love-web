@@ -1,9 +1,10 @@
 body {
-    --main-color: #00246B;
-    --secondary-color: #CADCFC;
-    --third-color: #002C54;
-    --fourth-color: #C5001A;
-    --fifth-color: #FDF6F6;
+    --main-color-normal: #051C55;
+    --main-color-light: #14128e;
+    --secondary-color-light: #fa921c;
+    --secondary-color-normal: #e76900;
+    --secondary-color-dark: #d05100;
+ 
     --main-font-regular: "Poppins"
 } 
 
@@ -11,30 +12,14 @@ h1 {
     font-family: var(--main-font-regular);
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 48px;
-
-    @media ( min-width: 640px ) {
-        font-size: 64px;
-    }
-
-    @media ( min-width: 960px ) {
-        font-size: 80px;
-    }
+    font-size: 9vw;
 }
 
 h2 {
     font-family: var(--main-font-regular) ;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 24px;
-
-    @media ( min-width: 640px ) {
-        font-size: 32px;
-    }
-    
-    @media ( min-width: 960px ) {
-        font-size: 40px;
-    }
+    font-size: 3vw;
 }
 
 h3 {
@@ -50,4 +35,9 @@ h3 {
     @media ( min-width: 960px ) {
         font-size: 32px ;
     }
+}
+
+a {
+    font-family: var(--main-font-regular);
+    font-size: 16px;
 }
