@@ -7,12 +7,22 @@
         margin: 0;
         padding: 0; }}
 
+section {
+    padding-left: 1vw;
+}
+
 header {
     position: sticky;
+    overflow-x: hidden;
     top:0;
     z-index: 10; 
     background-color: var(--main-color-normal);
     height: 300px;
+
+    @media ( min-width: 960px ) {
+        background-color: none;
+        position: unset;
+    }
     
     nav {
         width: 40%;
@@ -30,7 +40,7 @@ header {
 
         @media ( min-width: 960px ) {
             border: none;
-            position: static;
+            position: unset;
             padding-top: 40px;
             height: 50px;
             width: 100%;
@@ -51,7 +61,7 @@ header {
         row-gap: 40px;
 
         @media ( min-width: 960px) {
-            border: 3px solid var(--secondary-color-light);
+            border: 0.3vw solid var(--secondary-color-light);
             padding-block: 20px;
             border-radius: 100px 0px 0px 100px;
             align-items: center;
@@ -139,14 +149,80 @@ header {
 }
 
 .personal {
+    display: flex;
+    align-items: flex-start;
     background-color: var(--main-color-normal);
-    padding-left: 1vw;
-    padding-bottom: 100px;
+    padding-bottom: 10vw;
 
-    h1, h2 {
+    h1 {
+        border-right: 0.1vw solid var(--secondary-color-light);
         color: var(--secondary-color-light);
+        animation: typing 1s steps(15) forwards,
+        blink 0.5s step-end infinite;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    h2 {
+        width: 0;
+        border-right: 0.1vw solid var(--secondary-color-light);
+        color: var(--secondary-color-light);
+        animation: typing 1.8s steps(37) forwards,
+        blink 0.5s step-end infinite, border;
+        animation-delay: 1s;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        white-space: nowrap;
     }
 }
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent}
+}
+
+.information {
+    background-color: var(--main-color-normal);
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+
+    div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        animation: shoot-in linear;
+        animation-timeline: view();
+        width: 70vw;
+        height: 25vw;
+        border: 1vw solid var(--secondary-color-light); 
+        border-radius: 0px 600px 600px 0px;
+
+        h2 {
+            margin-left: 1vw;
+            margin-bottom: 1vw;
+            color: var(--secondary-color-light);
+        }
+
+        p {
+            margin-left: 1vw;
+            max-width: 60vw;
+            color: var(--secondary-color-light);
+        }
+    }
+
+    
+}
+
+@keyframes shoot-in {
+    from { margin-left: -100%; }
+    to { margin-left: 121.5%;}
+}
+
     
 
 .hamburger span:nth-child(odd) {

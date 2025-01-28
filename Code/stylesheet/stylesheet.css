@@ -4,8 +4,8 @@ body {
     --secondary-color-light: #fa921c;
     --secondary-color-normal: #e76900;
     --secondary-color-dark: #d05100;
- 
-    --main-font-regular: "Poppins"
+    --white: #ffffff;
+    --main-font-regular: "Poppins", arial;
 } 
 
 h1 {
@@ -18,8 +18,7 @@ h1 {
 h2 {
     font-family: var(--main-font-regular) ;
     font-weight: 700;
-    text-transform: uppercase;
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 h3 {
@@ -37,7 +36,14 @@ h3 {
     }
 }
 
+p {
+    font-family: var(--main-font-regular);
+    font-size: 1.5vw;
+}
+
 a {
     font-family: var(--main-font-regular);
     font-size: 16px;
+
+    /* nog veranderen naar vw ! */
 }
