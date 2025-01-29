@@ -1,0 +1,181 @@
+ 
+ html {
+    background-color: white;
+    height: 100vh;
+
+    * {
+        margin: 0;
+        padding: 0; }}
+
+section {
+    padding-left: 1vw;
+}
+
+
+.personal, .portfolio {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--main-color-normal);
+    padding-bottom: 10vw;
+
+    h1 {
+        border-right: 0.1vw solid var(--secondary-color-light);
+        color: var(--secondary-color-light);
+        animation: typing 1s steps(15) forwards,
+        blink 0.5s step-end infinite;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    h2 {
+        width: 0;
+        border-right: 0.1vw solid var(--secondary-color-light);
+        color: var(--secondary-color-light);
+        animation: typing-two 1.8s steps(37) forwards,
+        blink 0.5s step-end infinite, border;
+        animation-delay: 1s;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes typing-two {
+    from { width: 0; }
+    to { width: 87%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent}
+}
+
+.information {
+    background-color: var(--main-color-normal);
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+
+    div:nth-of-type(1) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70vw;
+        height: 35vw;
+        border: 1vw solid var(--secondary-color-light); 
+        border-radius: 0px 600px 600px 0px;
+        margin-bottom: 20vw;
+        margin-left: -2.1%;
+        animation: shoot-in-left linear;
+        animation-timeline: view();
+        animation-range: entry 0;
+
+        h2 {
+            margin-left: 1vw;
+            margin-bottom: 1vw;
+            color: var(--secondary-color-light);
+        }
+
+        p {
+            margin-left: 1vw;
+            max-width: 60vw;
+            color: var(--secondary-color-light);
+        }
+    }
+
+    div:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 70vw;
+        height: 35vw;
+        border: 1vw solid var(--secondary-color-light); 
+        margin-left: 27.6%;
+        border-radius: 600px 0px 0px 600px;
+        animation: shoot-in-right linear;
+        animation-timeline: view();
+        animation-range: entry 0;
+        
+        h2 {
+            margin-right: 1vw;
+            margin-bottom: 1vw;
+            color: var(--secondary-color-light);
+        }
+
+        p {
+            text-align: end;
+            margin-right: 1vw;
+            max-width: 60vw;
+            color: var(--secondary-color-light);
+        }
+    }
+}
+
+.top {
+    padding-top: 10vw;
+    padding-bottom: 30vw;
+}
+
+@keyframes shoot-in-left {
+    from { margin-left: -100%;}
+    to { margin-left: -2%}
+}
+
+@keyframes shoot-in-right {
+    from { margin-left: 100%; }
+    to { margin-left: 27.6%; }
+}
+
+    
+
+.hamburger span:nth-child(odd) {
+    left: 0;
+    border-radius: 9px 0 0 9px; }
+
+.hamburger span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9px 9px 0; }
+
+.hamburger span:nth-child(1), .hamburger span:nth-child(2) {
+    top:0; }
+
+.hamburger span:nth-child(3), .hamburger span:nth-child(4) {
+    top:13px; }   
+    
+.hamburger span:nth-child(5), .hamburger span:nth-child(6) {
+    top:26px; }  
+    
+.hamburger-open .hamburger span:nth-child(1), .hamburger-open .hamburger span:nth-child(6) {
+    transform: rotate(45deg); }
+
+.hamburger-open .hamburger span:nth-child(2), .hamburger-open .hamburger span:nth-child(5) {
+    transform: rotate(-45deg); }  
+
+.hamburger-open .hamburger span:nth-child(1) {
+    top: 8px;
+    left: 5px; }
+
+.hamburger-open .hamburger span:nth-child(2) {
+    top: 8px;
+    left: calc(50% - 5px); }
+
+.hamburger-open .hamburger span:nth-child(3) {
+    left: calc(-100% - 5px); 
+    opacity: 0; }
+
+.hamburger-open .hamburger span:nth-child(4) { 
+    left: 150%;
+    opacity: 0; }
+
+.hamburger-open .hamburger span:nth-child(5) { 
+    top: 19px;
+    left: 5px; }
+
+.hamburger-open .hamburger span:nth-child(6) { 
+    top: 19px;
+    left: calc(50% - 5px); }

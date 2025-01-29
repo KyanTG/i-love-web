@@ -43,7 +43,5 @@ p {
 
 a {
     font-family: var(--main-font-regular);
-    font-size: 16px;
-
-    /* nog veranderen naar vw ! */
+    font-size: 16px; 
 }
