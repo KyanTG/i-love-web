@@ -17,9 +17,10 @@ header {
     top:0;
     z-index: 10; 
     background-color: var(--main-color-normal);
-    height: 300px;
+    height: 15vw;
 
     @media ( min-width: 960px ) {
+        height: 25vw;
         background-color: none;
         position: unset;
     }
@@ -168,7 +169,7 @@ header {
         width: 0;
         border-right: 0.1vw solid var(--secondary-color-light);
         color: var(--secondary-color-light);
-        animation: typing 1.8s steps(37) forwards,
+        animation: typing-two 1.8s steps(37) forwards,
         blink 0.5s step-end infinite, border;
         animation-delay: 1s;
         overflow: hidden;
@@ -180,6 +181,11 @@ header {
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
+}
+
+@keyframes typing-two {
+    from { width: 0; }
+    to { width: 87%; }
 }
 
 @keyframes blink {
@@ -195,8 +201,10 @@ header {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-left: -2.1%;
         animation: shoot-in linear;
         animation-timeline: view();
+        animation-range: entry 0;
         width: 70vw;
         height: 25vw;
         border: 1vw solid var(--secondary-color-light); 
@@ -214,13 +222,16 @@ header {
             color: var(--secondary-color-light);
         }
     }
+}
 
-    
+.top {
+    padding-top: 10vw;
+    padding-bottom: 30vw;
 }
 
 @keyframes shoot-in {
-    from { transform:translateX(-120%) }
-    to { transform:translateX(145%) }
+    from { margin-left: -100%;}
+    to { margin-left: -2%}
 }
 
     
