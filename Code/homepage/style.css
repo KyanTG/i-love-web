@@ -2,13 +2,14 @@
  html {
     background-color: white;
     height: 100vh;
+    overflow-x: hidden;
 
     * {
         margin: 0;
         padding: 0; }}
 
-section {
-    padding-left: 1vw;
+section, footer {
+    padding-inline: 1vw;
 }
 
 
@@ -95,7 +96,7 @@ section {
         width: 70vw;
         height: 35vw;
         border: 1vw solid var(--secondary-color-light); 
-        margin-left: 27.6%;
+        margin-left: 28%;
         border-radius: 600px 0px 0px 600px;
         animation: shoot-in-right linear;
         animation-timeline: view();
@@ -131,6 +132,21 @@ section {
     to { margin-left: 27.6%; }
 }
 
+footer {
+    display: flex;
+    column-gap: 1vw;
+    background-color: var(--main-color-normal);
+
+    a:hover {
+        scale: 1.1;
+        transition: 0.2s ease;
+    }
+
+    img {
+        width: 6vw;
+        height: 6vw;
+    }
+}
     
 
 .hamburger span:nth-child(odd) {
