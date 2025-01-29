@@ -3,13 +3,16 @@
     background-color: white;
     height: 100vh;
     overflow-x: hidden;
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
     * {
         margin: 0;
         padding: 0; }}
 
 section, footer {
-    padding-inline: 1vw;
+    padding-inline: 2vw;
 }
 
 
@@ -70,19 +73,19 @@ section, footer {
         border: 1vw solid var(--secondary-color-light); 
         border-radius: 0px 600px 600px 0px;
         margin-bottom: 20vw;
-        margin-left: -2.1%;
+        margin-left: -3.2%;
         animation: shoot-in-left linear;
         animation-timeline: view();
         animation-range: entry 0;
 
         h2 {
-            margin-left: 1vw;
+            margin-left: 2vw;
             margin-bottom: 1vw;
             color: var(--secondary-color-light);
         }
 
         p {
-            margin-left: 1vw;
+            margin-left: 2vw;
             max-width: 60vw;
             color: var(--secondary-color-light);
 
@@ -100,7 +103,7 @@ section, footer {
         width: 70vw;
         height: 35vw;
         border: 1vw solid var(--secondary-color-light); 
-        margin-left: 28%;
+        margin-left: 28.2%;
         border-radius: 600px 0px 0px 600px;
         animation: shoot-in-right linear;
         animation-timeline: view();
@@ -108,14 +111,14 @@ section, footer {
         margin-top: 150px;
         
         h2 {
-            margin-right: 1vw;
+            margin-right: 2vw;
             margin-bottom: 1vw;
             color: var(--secondary-color-light);
         }
 
         p {
             text-align: end;
-            margin-right: 1vw;
+            margin-right: 2vw;
             max-width: 60vw;
             color: var(--secondary-color-light);
         }
