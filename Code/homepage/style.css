@@ -85,6 +85,10 @@ section, footer {
             margin-left: 1vw;
             max-width: 60vw;
             color: var(--secondary-color-light);
+
+            u {
+                text-underline-offset: 0.5vw;
+            }
         }
     }
 
