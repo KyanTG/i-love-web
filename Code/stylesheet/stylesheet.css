@@ -81,3 +81,21 @@ a {
         }
     }
 }
+
+.styled-btn:hover {
+
+    div {
+        animation: bounce 2s ease infinite;
+    }
+}
+
+@keyframes bounce {
+    0% { transform:translateY(0%); }
+    10% { transform:translateY(-30%); }
+    20% { transform:translateY(0%); }
+    35% { transform:translateY(-14%); }
+    37% { transform:translateY(0%); }
+    39% { transform:translateY(-6%); }
+    40% { transform:translateY(0); }
+}
+
