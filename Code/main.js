@@ -19,11 +19,20 @@ const sluitButton = document.querySelector(".hamburger-open");
 
 // Voortgangs pagina divjes bij click info laten zien
 
-const ShowMore = document.querySelector(".show-more");
 
-ShowMore.addEventListener("click", ShowText);
+let showMoreArticle = document.querySelectorAll(".show-more-article");
 
-function ShowText() {
-  const InfoDiv = document.querySelector(".show-more-article");
-  InfoDiv.classList.toggle("div-show-p");
-}
+showMoreArticle.forEach(element => {
+  let BTNShow = element.querySelector(".show-more");
+
+  BTNShow.onclick = function() {
+    element.classList.toggle("div-show-p");
+    BTNShow.classList.toggle("button-active")
+    if(BTNShow.classList.contains("button-active")) {
+      BTNShow.innerHTML = "Show Less"; 
+    }
+    else {
+      BTNShow.innerHTML = "Show More"; 
+    }
+  }
+});
