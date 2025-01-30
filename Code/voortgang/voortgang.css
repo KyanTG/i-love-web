@@ -38,30 +38,53 @@ h1 {
 section:nth-of-type(2) {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
-    justify-content: center;
+    justify-content: flex-start;
     column-gap: 3vw;
     row-gap: 1vw;
+    padding-top: 10vw;
 
     @media ( min-width: 640px ) {
         grid-template-columns: repeat(auto-fit, 500px);
     }
 
-    div {
+    article {
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         border: 1vw solid var(--secondary-color-light); 
         border-radius: 300px;
-        height: 600px;
+        height: 100px;
         width: 300px;
+        transition: 0.2s ease;
 
         @media ( min-width: 640px) {
             width: 500px;
-            height: 1000px;
+            height: 400px;
         }
 
         h2 {
             color: var(--secondary-color-light);
-            margin-top: 2vw;
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+        }
+
+        p {
+            color: var(--secondary-color-light);
+            display: none;
+        }
+    }
+
+    .div-show-p {
+        height: 1000px;
+
+        p { 
+            display: unset;
+            width: 240px;
+            margin-top: 3vw;
+
+            @media ( min-width: 640px ) {
+                width: 440px;
+            }
         }
     }
 }

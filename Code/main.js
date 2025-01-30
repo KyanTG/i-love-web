@@ -1,6 +1,5 @@
 
-
-
+// Hamburger menu
 
 const openButton = document.querySelector(".hamburger");
 
@@ -17,3 +16,14 @@ function openMenu() {
 
 const sluitButton = document.querySelector(".hamburger-open");
 
+
+// Voortgangs pagina divjes bij click info laten zien
+
+const ShowMore = document.querySelector(".show-more");
+
+ShowMore.addEventListener("click", ShowText);
+
+function ShowText() {
+  const InfoDiv = document.querySelector(".show-more-article");
+  InfoDiv.classList.toggle("div-show-p");
+}

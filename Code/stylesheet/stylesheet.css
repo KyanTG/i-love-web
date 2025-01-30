@@ -41,3 +41,43 @@ a {
     font-family: var(--main-font-regular);
     font-size: 16px; 
 }
+
+.styled-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    font-family: var(--main-font-regular);
+    text-transform: uppercase;
+    font-size: 2vw;
+    padding: 1vw;
+    border: 0.5vw solid var(--secondary-color-light);
+    background-color: var(--main-color-normal);
+    color: var(--secondary-color-light);
+    border-radius: 100px;
+
+    @media ( min-width: 640px ) {
+        font-size: 1.5vw;
+    }
+
+    @media ( min-width: 960px ) {
+        font-size: 1vw;
+    }
+
+    div {
+        background-color: var(--secondary-color-light);
+        height: 2vw;
+        width: 2vw;
+        border-radius: 25px;
+
+        @media ( min-width: 640px ) {
+            height: 1.5vw;
+            width: 1.5vw;
+        }
+    
+        @media ( min-width: 960px ) {
+            height: 1vw;
+            width: 1vw;
+        }
+    }
+}
