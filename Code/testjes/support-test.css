@@ -1,0 +1,37 @@
+
+
+/* Dit is handig voor oudere devices */
+
+@supports (background-clip: text) {
+
+    p { 
+        width: fit-content;
+        font-size: 30px;
+        background: linear-gradient(45deg, red, yellow,  blue, blue);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    
+    }
+}
+
+.button {
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 100%;
+        background-color: purple;
+        width: 150px;
+        height: 150px;
+
+        div {
+                width: 0;
+                height: 0;
+                border-top: 25px solid transparent;
+                border-left: 50px solid white;
+                border-bottom: 25px solid transparent;
+        }
+    }
+}
