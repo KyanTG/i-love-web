@@ -1,18 +1,30 @@
 import express from 'express'
 
+import { Liquid } from 'liquidjs';
+
+import { marked } from 'marked';
+
+import { readdir, readFile } from 'node:fs/promises'
+
 const app = express()
+
+const engine = new Liquid();
+app.engine('liquid', engine.express()); 
+
+
+// markdowns opvragen
+
+const files = await readdir('markdowns')
+
+console.log(files)
+
+
 
 app.use(express.static('public'))
 
 
 app.use(express.urlencoded({extended: true}))
 
-
-import { Liquid } from 'liquidjs';
-
-
-const engine = new Liquid();
-app.engine('liquid', engine.express()); 
 
 
 app.set('views', './views')
@@ -34,9 +46,20 @@ app.get('/extras', async function (request, response) {
 })
 
 app.get('/voortgang', async function (request, response) {
-    response.render('voortgang.liquid')
+    response.render('voortgang.liquid', {files: files})
 })
 
+app.get('/voortgang/:slug', async function (request, response) {
+
+    console.log(request.params.slug)
+
+
+    const fileContents = await readFile('markdowns/' + request.params.slug + '.md', { encoding: 'utf8' })    
+    const markedContent = marked.parse(fileContents)
+
+
+    response.render('artikel.liquid', {fileContents: markedContent})
+})
 
 
 

@@ -1,0 +1,10 @@
+{% render 'partials/head.liquid', title:'homepage' %}
+
+{% render 'partials/header.liquid' %}
+
+<section class="wazzap" >
+    {% for file in files %}
+        <a href="/voortgang/{{ file | slice:0,-3 }}">{{ file | slice:0,-3 }}</a>
+    {% endfor %}
+</section>
+{{ files | json }}
