@@ -213,6 +213,7 @@ header {
     height: 55px;
     width: 55px;
     border-radius: 100%;
+    transition: 0.2s ease-in;
 }
 
 .menu span {
@@ -221,7 +222,6 @@ header {
     height: 10px;
     width: 10px;
     border-radius: 100%;
-    transition: all 0.2s ease-in-out;
 }
 
 .menu span:nth-of-type(1)  {
@@ -244,16 +244,32 @@ header {
     grid-row: 3/4;
 }
 
+.menu span:nth-of-type(5)  {
+    display: none;
+}
+
 .menu-open .menu {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.menu-open .menu span:nth-of-type(1) {
+.menu-open .menu span {
+    position: absolute;
     scale: 2;
 }
+.menu-open .menu span:nth-of-type(1) {
+    z-index: 4;
+}
 
-.menu-open .menu span:nth-of-type(2), .menu-open .menu span:nth-of-type(3), .menu-open .menu span:nth-of-type(4)  {
-    display: none;
+.menu-open .menu span:nth-of-type(2) {
+    z-index: 3;
+}
+
+.menu-open .menu span:nth-of-type(3) {
+    z-index: 2;
+}
+
+.menu-open .menu span:nth-of-type(4) {
+    z-index: 1;
 }
