@@ -1,6 +1,6 @@
-{% render partials head.liquid, title:'portfolio' %}
+{% render 'partials/head.liquid', title:'homepage' %}
 
-{% render partials header.liquid %}
+{% render 'partials/header.liquid' %}
 
 
 
@@ -8,3 +8,14 @@
     <h1>portfolio</h1>
   </section>
 </body>
+
+
+{% comment %} hiermee kan je automatisch artikels maken die uitklappen met informatie met een show more en daarin een show lesss button. {% endcomment %}
+
+<article class="show-more-article">
+  <h2>Sprint 1</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dolor repellendus incidunt facilis nulla iste, placeat natus temporibus architecto culpa ea corrupti a odio. Repellendus, animi! Corrupti non modi voluptates.</p>
+  <button class="show-more styled-btn">show more
+    <div></div>
+  </button>
+</article>
