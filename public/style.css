@@ -70,6 +70,7 @@ section, footer {
         width: 70vw;
         height: 35vw;
         border: 1vw solid var(--secondary-color-light); 
+        border-left: 0px;
         border-radius: 0px 600px 600px 0px;
         margin-bottom: 20vw;
         margin-left: -3.2%;
@@ -102,6 +103,7 @@ section, footer {
         width: 70vw;
         height: 35vw;
         border: 1vw solid var(--secondary-color-light); 
+        border-right: 0px;
         margin-left: 28.2%;
         border-radius: 600px 0px 0px 600px;
         animation: shoot-in-right linear;
