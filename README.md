@@ -1,8 +1,17 @@
-# Welkom!
+# Welkom op mijn pagina
+
+## Inhoudsopgave
+
+### Samenvatting FDND.
+### Wat staat er op mijn website.
+### Wat hoop ik te bereiken.
+
+## Samenvatting 
 
 
-Op deze website valt van alles te zien over wie ik ben, skills, portfolio en nog vele extra! Veel scrollplezier!
+## Wat staat er op mijn website
 
-17-02-2025 / 23-02-2025
+## Wat hoop ik te bereiken
 
-( Momenteel ben ik bezig met het afmaken van de homepage en van de voortgangspage, de andere pagina's worden daarna aan gewerkt. )
+
+
