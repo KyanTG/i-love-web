@@ -1,20 +1,37 @@
 
 // Hamburger menu
 
-const openButton = document.querySelector(".hamburger");
+// const openButton = document.querySelector(".hamburger");
 
-openButton.addEventListener("click", openMenu);
+// openButton.addEventListener("click", openMenu);
 
 
-function openMenu() {  
+// function openMenu() {  
 
-  const deNav = document.querySelector("nav");
+//   const deNav = document.querySelector("nav");
 
-  deNav.classList.toggle("nav-open");
+//   deNav.classList.toggle("nav-open");
   
-  document.body.classList.toggle('hamburger-open'); }
+//   document.body.classList.toggle('hamburger-open'); }
 
-const sluitButton = document.querySelector(".hamburger-open");
+// const sluitButton = document.querySelector(".hamburger-open");
+
+// hamburger creative
+
+const openB = document.querySelector(".menu");
+
+openB.addEventListener("click", openM);
+
+
+function openM() {  
+
+  const deN = document.querySelector("nav");
+
+  deN.classList.toggle("nav-open");
+  
+  document.body.classList.toggle('menu-open'); }
+
+const sluitB = document.querySelector(".menu-open");
 
 
 // Voortgangs pagina divjes bij click info laten zien
