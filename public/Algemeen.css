@@ -220,6 +220,7 @@ header {
     row-gap: 5px;
     column-gap: 5px;
     background-color: var(--secondary-color-light);
+    border: none;
     height: 55px;
     width: 55px;
     border-radius: 100%;
