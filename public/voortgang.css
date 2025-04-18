@@ -2,9 +2,6 @@ html {
     background-color: var(--main-color-normal);
     height: 100vh;
     overflow-x: hidden;
-    ::-webkit-scrollbar {
-        display: none;
-    }
 
     * {
         margin: 0;
@@ -19,8 +16,7 @@ section, footer {
 h1 {
     color: var(--secondary-color-light);
     border-right: 0.1vw solid var(--secondary-color-light);
-    animation: typing 0.7s steps(11) forwards,
-    blink 0.5s step-end infinite;
+    animation: typing 0.7s steps(11) forwards, blink 0.5s step-end infinite;
     overflow: hidden;
     flex-wrap: nowrap;
     white-space: nowrap;
