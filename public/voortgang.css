@@ -84,3 +84,36 @@ section:nth-of-type(2) {
         }
     }
 }
+
+.vragenlijstcontent {
+    display: flex;
+    flex-direction: column;
+    background: var(--main-color-normal);
+    gap: 32px;
+}
+
+.vragenlijst {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 5px solid var(--secondary-color-light);
+    padding: 16px;
+    gap: 16px;
+}
+
+.vragenlijst h2, .vragenlijst p {
+    color: var(--secondary-color-light);
+}
+
+.vragenlijst h2 {
+    margin-bottom: 32px;
+}
+
+.vragenlijst a {
+    color: var(--secondary-color-light);
+    border: 2px solid var(--secondary-color-light);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+}

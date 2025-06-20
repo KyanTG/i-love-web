@@ -2,79 +2,75 @@
 
 {% render 'partials/header.liquid' %}
 
-<section class="wazzap" >
+{% comment %} <section class="wazzap" >
     {% for file in files %}
         <a href="/voortgang/{{ file | slice:0,-3 }}">{{ file | slice:0,-3 }}</a>
     {% endfor %}
 </section>
-{{ files | json }}
+{{ files | json }} {% endcomment %}
 
-<section>
-    <h1>Progression</h1>
-  </section>
-
-
-  <p>1.Ik kan uitleggenwat NodeJS isen waarvoorhet gebruikt wordt</p>
-  <p>NodeJS is een programma waar je custom data kan opslaan en dit kan laten zien door het te fetchen doormiddel van JSserver 2punten</p><br>
-  <p>2. Ik weet wat het doel van package.json is en heb hier aanpassingen ingemaakt</p>
-  <p>Hiermee kan je Json ophalen in github. 1puntent</p><br>
-  <p>3. Ik heb met npm packages geïnstalleerd en gebruikt in het bestand server.js</p>
-  <p>npm packages zorgen ervoor dat de server te gebruiken is op een local host. 3punten</p><br>
-  <p>4. Ik kan met commando’s in de terminal een NodeJS project stoppen en starten</p>
-  <p>ja dit kan ik doormiddel van NPM start. 3 punten</p><br>
-  <p>5. Ik weet waarom ik mijn NodeJS project regelmatig moet herstarten en kan dit uitleggen</p>
-  <p>dit moet als je aanpassingen maakt in de serverJS 3punten</p><br>
-  <p>6. Ik heb een strategie voor debuggen in NodeJS</p>
-  <p>ja dit kan ik doormiddel van console log te gebruiken om te testen of het werkt. 3punt</p><br>
-  <p>7. Ik kan uitleggen wat Express.js doet en waarom het nodig is om met NodeJS een website te bouwen</p>
-  <p>hiermee kan je dingen fetchen en ervoor zorgen dat de server kan runnen 2 punten </p><br>
-  <p>8. Ik weet wat routes zijn en kan zelf een nieuwe route aanmaken</p>
-  <p>met routes kan je vervolgpaginas aanmaken 3 punten</p><br>
-  <p>9. Ik weet wat request en response argumenten zijn ineen functie voor het laden van data</p>
-  <p>dit zorgt ervoor dat data opgevraagd kan worden en op een manier verwerkt / verstuurd word 2 punten</p><br>
-  <p>10. Ik heb gebruik gemaakt van een request parameter om specifieke data te laden</p>
-  <p>ja door met .get te werken 2 punten</p><br>
-  <p>11. Ik kan uitleggen wat Liquid doet en waarom het nodig is om met Express.js een website te maken</p>
-  <p>met liquid kan je bijvoorbeeld in meerdere pagina's 1 header of footer laden 2 punten</p><br>
-  <p>12. Ik weet hoe ik data naar Liquid verstuur om dit te gebruiken bij het renderen van een pagina</p>
-  <p>ja dit weet ik dit kan bijvoorbeeld door de json code op te zoeken en deze te typen en zo krijg je de opgevraagde data 3 punten</p><br>
-  <p>13. Ik weet hoe ik Liquid filters toe kan passen en waar ik kan vinden hoe die werken</p>
-  <p>hiermee kan je bepaalde filters kiezen 2 punten</p><br>
-  <p>14. Ik heb een nieuwe route gemaakt en nieuwe data meegegeven aan een Liquid view</p>
-  <p>ja dit heb ik gedaan toen we de squadpage gingen maken 2 punten</p><br>
-  <p>15. Ik weet waar een foreach loop voor gebruikt wordt en pas het toe in een Liquid view om HTML te renderen</p>
-  <p>hiermee kan je een loop bouwen meer weet ik niet 1 punten</p><br>
-  <p>16. Ik kan in Liquid een controle maken waarmee de avatar niet getoond wordt als deze niet in whois.fdnd.nl is ingevuld</p>
-  <p>nog niet gedaan 1 punten</p><br>
-  <p>17. Ik heb een strategie voor debuggen in Liquid</p>
-  <p>geen idee 1 punten</p><br>
-  <p>18. Ik kan data fetchen uit eenREST API</p>
-  <p>- 1 punten</p><br>
-  <p>19. Ik snap het verschil tussen HTTP requests van de methodes GET en POST</p>
-  <p>bij appget vraag je gegevens op en bij post zorg je dat die verwerkt worden in de route erna 2 punten</p><br>
-  <p>20. Ik kan data uit eenREST API filteren of sorteren</p>
-  <p>ja doormiddel van een een fetch de gegevens ophalen en die zetten in de post route 2 punten</p><br>
-  <p>21. Ik snap wat het async keyword doet inJavaScriptcode</p>
-  <p>nee 0 punten</p><br>
-  <p>22. Ik weet wat het doel is van een try/catch block en kan het gebruiken bij het parsen van JSON</p>
-  <p>geen idee 0 punten</p><br>
-  <p>23. Ik begrijp het verschil tussen client-side JavaScript en server-side JavaScript en wanneer ik welke het handigst in kan zetten</p>
-  <p>ja opzich wel 1 punt</p><br>
-  <p>24. Ik kan formulier data die is ge-POST opslaan ineen variabele op de server en gebruiken bij het renderen van een pagina</p>
-  <p>weet even niet hoe ik dit beschrijf 1 punten</p>
-  <p>25. Ik kan formulierdata die is ge-POST door middelvan een POST of PATCH HTTP request opslaan in de REST API</p>
-  <p>met een sort? heb even geen idee 0 punten</p>
-
+<section class="vragenlijstcontent">
+<article class="vragenlijst">
+    <h2>sprint -</h2>
+    <p>1.Ik kan uitleggenwat NodeJS isen waarvoorhet gebruikt wordt</p>
+    <p>NodeJS is een programma waar je custom data kan opslaan en dit kan laten zien door het te fetchen doormiddel van JSserver 2punten</p><br>
+    <p>2. Ik weet wat het doel van package.json is en heb hier aanpassingen ingemaakt</p>
+    <p>Hiermee kan je Json ophalen in github. 1puntent</p><br>
+    <p>3. Ik heb met npm packages geïnstalleerd en gebruikt in het bestand server.js</p>
+    <p>npm packages zorgen ervoor dat de server te gebruiken is op een local host. 3punten</p><br>
+    <p>4. Ik kan met commando’s in de terminal een NodeJS project stoppen en starten</p>
+    <p>ja dit kan ik doormiddel van NPM start. 3 punten</p><br>
+    <p>5. Ik weet waarom ik mijn NodeJS project regelmatig moet herstarten en kan dit uitleggen</p>
+    <p>dit moet als je aanpassingen maakt in de serverJS 3punten</p><br>
+    <p>6. Ik heb een strategie voor debuggen in NodeJS</p>
+    <p>ja dit kan ik doormiddel van console log te gebruiken om te testen of het werkt. 3punt</p><br>
+    <p>7. Ik kan uitleggen wat Express.js doet en waarom het nodig is om met NodeJS een website te bouwen</p>
+    <p>hiermee kan je dingen fetchen en ervoor zorgen dat de server kan runnen 2 punten </p><br>
+    <p>8. Ik weet wat routes zijn en kan zelf een nieuwe route aanmaken</p>
+    <p>met routes kan je vervolgpaginas aanmaken 3 punten</p><br>
+    <p>9. Ik weet wat request en response argumenten zijn ineen functie voor het laden van data</p>
+    <p>dit zorgt ervoor dat data opgevraagd kan worden en op een manier verwerkt / verstuurd word 2 punten</p><br>
+    <p>10. Ik heb gebruik gemaakt van een request parameter om specifieke data te laden</p>
+    <p>ja door met .get te werken 2 punten</p><br>
+    <p>11. Ik kan uitleggen wat Liquid doet en waarom het nodig is om met Express.js een website te maken</p>
+    <p>met liquid kan je bijvoorbeeld in meerdere pagina's 1 header of footer laden 2 punten</p><br>
+    <p>12. Ik weet hoe ik data naar Liquid verstuur om dit te gebruiken bij het renderen van een pagina</p>
+    <p>ja dit weet ik dit kan bijvoorbeeld door de json code op te zoeken en deze te typen en zo krijg je de opgevraagde data 3 punten</p><br>
+    <p>13. Ik weet hoe ik Liquid filters toe kan passen en waar ik kan vinden hoe die werken</p>
+    <p>hiermee kan je bepaalde filters kiezen 2 punten</p><br>
+    <p>14. Ik heb een nieuwe route gemaakt en nieuwe data meegegeven aan een Liquid view</p>
+    <p>ja dit heb ik gedaan toen we de squadpage gingen maken 2 punten</p><br>
+    <p>15. Ik weet waar een foreach loop voor gebruikt wordt en pas het toe in een Liquid view om HTML te renderen</p>
+    <p>hiermee kan je een loop bouwen meer weet ik niet 1 punten</p><br>
+    <p>16. Ik kan in Liquid een controle maken waarmee de avatar niet getoond wordt als deze niet in whois.fdnd.nl is ingevuld</p>
+    <p>nog niet gedaan 1 punten</p><br>
+    <p>17. Ik heb een strategie voor debuggen in Liquid</p>
+    <p>geen idee 1 punten</p><br>
+    <p>18. Ik kan data fetchen uit eenREST API</p>
+    <p>- 1 punten</p><br>
+    <p>19. Ik snap het verschil tussen HTTP requests van de methodes GET en POST</p>
+    <p>bij appget vraag je gegevens op en bij post zorg je dat die verwerkt worden in de route erna 2 punten</p><br>
+    <p>20. Ik kan data uit eenREST API filteren of sorteren</p>
+    <p>ja doormiddel van een een fetch de gegevens ophalen en die zetten in de post route 2 punten</p><br>
+    <p>21. Ik snap wat het async keyword doet inJavaScriptcode</p>
+    <p>nee 0 punten</p><br>
+    <p>22. Ik weet wat het doel is van een try/catch block en kan het gebruiken bij het parsen van JSON</p>
+    <p>geen idee 0 punten</p><br>
+    <p>23. Ik begrijp het verschil tussen client-side JavaScript en server-side JavaScript en wanneer ik welke het handigst in kan zetten</p>
+    <p>ja opzich wel 1 punt</p><br>
+    <p>24. Ik kan formulier data die is ge-POST opslaan ineen variabele op de server en gebruiken bij het renderen van een pagina</p>
+    <p>weet even niet hoe ik dit beschrijf 1 punten</p>
+    <p>25. Ik kan formulierdata die is ge-POST door middelvan een POST of PATCH HTTP request opslaan in de REST API</p>
+    <p>met een sort? heb even geen idee 0 punten</p>
+</article>
 
 
 
 
 
 
-   <article>
-    <h1>Mijn Voortgang</h1>
-    <h2>hierin laat ik mijn voortgang zien van wat ik per dag heb gemaakt tijdens de opleiding FDND.</h2>
-    
+   <article class="vragenlijst">
+    <h2>sprint 9</h2>
     <p>Ik kan uitleggen wat NodeJS is en waarvoor het gebruikt wordt. 2pnt</p>
     <p>Ik weet wat het doel van package.json is en heb hier aanpassingen in gemaakt 2pnt</p>
     <p>Ik heb met npm packages geïnstalleerd en gebruikt in het bestand server.js 2pnt</p>
@@ -103,7 +99,8 @@
 </article><br><br><br><br> 
 
 {% comment %} sprint 10 {% endcomment %}
-<article>
+<article class="vragenlijst">
+    <h2>sprint 10</h2>
     <p>Ik begrijp het verschil tussen client-side JavaScript en server-side JavaScript en wanneer ik welke het handigst in kan zetten. Verschil is dat je server side gebruikt voor server en client side meer voor animaties. 2pnt</p> 
     <p>Ik heb een strategie voor server-side JavaScript debuggen, voor client-side JavaScript debuggen, en voor Liquid code debuggen ik doe dit eigenlijk niet het enige wat ik doe is soms de server opnieuw starten en te console loggen. 3pnt</p>
     <p>Ik kan GET en POST routes aanmaken en request parameters gebruiken. dit doe ik doet app.get app.post ik weet hoe dit werkt. 3pnt </p>
@@ -133,31 +130,47 @@
 
 
 {% comment %} sprint 12 {% endcomment %}
-<article>
+<article class="vragenlijst">
+    <h2>sprint 12</h2>
     <p>Ik begrijp het verschil tussen client-side JavaScript en server-side JavaScript en wanneer ik welke het handigst in kan zetten. client side gebruik je vooral voor enhancements en server sdie voor basis 2pnt </p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/views/catalogus.liquid#L45-L60">voorbeeld</a>
     <p>Ik heb een strategie voor server-side JavaScript debuggen, voor client-side JavaScript debuggen, en voor Liquid code debuggen. door te console loggen of door een p met de informatie in het bestand te zetten zodat dit zichtbaar word op de site. 3pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/commit/939667aa49febea705a360ce59cf61d1daac3e2c#diff-683ea25e31c8334e75ec6be2e4f83fbeb896b83a0e9e99e57d15ddbbedee66dbL34">voorbeeld</a>
     <p>Ik kan GET en POST routes aanmaken en request parameters gebruiken. makkie 3pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/server.js#L27-L57">voorbeeld</a>
     <p>Ik kan server-side JSON data fetchen uit een REST API Makkie 3pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/server.js#L31">voorbeeld</a>
     <p>Ik kan data uit een REST API filteren of sorteren jazeker nog niet perfect maar begrijp het wel 2pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/server.js#L31">voorbeeld</a>
     <p>Ik snap wat het async keyword doet in JavaScript code het pauzeert tot het resultaat er is 2pnt</p>
     <p>Ik weet wat het doel is van een try/catch block en kan het gebruiken bij het parsen van JSON hiermee kan je bijvoorbeeld iets proberen en als het niet werkt een error of iets anders meegeven 3pnt</p>
     <p>Ik kan met een client-side fetch een werkend formulier verrijken ik begrijp het maar nog niet perfect 2.5 pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/main/views/detail.liquid#L131-L174">voorbeeld</a>
     <p>Ik kan multi-page en single-page view transitions inzetten en aanpassen. jazeker gedaan in sprint 10/11 3pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/public/styling/catalogus.css#L7-L9">voorbeeld</a>
     <p>Ik kan verschillende manieren van responsive images uitleggen en toepassen, ik kan dit maar nog niet perfect 2pnt</p>
     <p>Ik weet hoe ik de resultaten van een performance audit moet interpreteren en hoe ik performance problemen kan oplossen. jazeker door de informatie te lezen en op te zoeken krijg je alles wat je nodig hebt hiervoor 3pnt</p>
     <p>Ik weet hoe ik met client-side JS de UX kan verbeteren, rekening houdend met progressive enhancement. jazeker door bijvoorbeeld een search veld live te laten werken of loading states 2pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/views/detail.liquid#L143-L171">voorbeeld</a>
     <p>Ik weet hoe ik binnen HTML, CSS en client-side JS nieuwe technieken toe kan passen, rekening houdend met oudere browsers. jazeker door fallbacks te gebruiken met @supports en niet te nesten 3pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/public/styling/detail.css#L343-L352">voorbeeld</a>
     <p>Ik weet wat objecten, arrays, strings, loops, variabelen, functies en parameters zijn, en kan die in JavaScript inzetten jazeker maar nog niet 100% perfect 2pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/views/detail.liquid#L116-L120">voorbeeld</a>
     <p>Ik weet wat geavanceerdere concepten in JavaScript zijn, zoals closures, promises, callbacks, scope en de event loop. ik weet wat dit zijn nog niet heel erg gebruik van gemaakt 2pnt</p>
     <p>Ik kan via GitHub met feature branches werken, pull requests aanmaken, reviewen en mergen makkie 3pnt</p>
     <p>Ik weet hoe ik formulieren pro-actief kan valideren met client-side code 1pnt</p>
     <p>Ik weet de eerste regel van ARIA, en wat dat betekent voor hoe ik HTML schrijf ja dit is handig voor screenreaders 2pnt</p>
     <p>Ik weet wat layout shifts zijn, door wat ze veroorzaakt worden, hoe ik ze kan meten en hoe ik ze kan oplossen jazeker, kan komen door grote images, kan je vermijden met lazy loading of skeleton states. 2.5pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/views/catalogus.liquid#L33">voorbeeld</a>
     <p>Ik weet wat de Core Web Vitals zijn, hoe ik die kan meten, en hoe ik de cijfers moet interpreteren, ja dingen zoals performance layout shifts, first contentful paint, largest contentful paint. 3pnt</p>
     <p>Ik weet hoe perceived performance invloed heeft op de beleving van een gebruiker, en ik heb de ontwerp- en code vaardigheden om die toe te passen jazeker bijvoorbeeld lazy loading skeleton states auto updates succes state. 2pnt bijna 3pnt</p>
     <p>Ik kan UI states in meerdere lagen van progressive enhancement inzetten om de UX te verbeteren jazeker met @supports en fallbacks 3pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/public/styling/detail.css#L439-L489">voorbeeld</a>
     <p>Ik kan een UI leuker en prettiger maken, zonder de core functionaliteit uit het oog te verliezen jazeker zoals hierboven benoemd en door op te zoeken hoe het ondersteund owrd 3pnt</p>
+    <a href="https://github.com/KyanTG/proof-of-concept/blob/49a88deb93db08edd0f736c1357fb60a8ef0fef3/public/styling/detail.css#L439-L489">voorbeeld</a>
     <p>Ik kan scroll-driven animations inzetten om de UI beter te maken ik kan dit wel, nog niet perfect 2pnt</p>
+    <a href="https://github.com/KyanTG/i-love-web/blob/f49bed284606d25ad8c9a8aeb2bc9b6602db572c/public/style.css#L77-L79">voorbeeld</a>
     <p>Ik weet hoe ik verschillende vormen van feature detection in kan zetten in HTML, in CSS en in client-side JS if en else states 2pnt</p>
 </article>
+</section>
 </body> 
