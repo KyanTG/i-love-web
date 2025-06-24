@@ -35,19 +35,23 @@ app.set('views', './views')
 
 app.get('/', async function (request, response) {
     response.render('home.liquid')
-})
+});
 
 app.get('/portfolio', async function (request, response) {
     response.render('portfolio.liquid')
-})
+});
 
 app.get('/extras', async function (request, response) {
     response.render('extras.liquid')
-})
+});
 
 app.get('/voortgang', async function (request, response) {
     response.render('voortgang.liquid', {files: files})
-})
+});
+
+app.get('/new', async function(request, response) {
+    response.render('new.liquid')
+});
 
 app.get('/voortgang/:slug', async function (request, response) {
 
@@ -59,7 +63,7 @@ app.get('/voortgang/:slug', async function (request, response) {
 
 
     response.render('artikel.liquid', {fileContents: markedContent})
-})
+});
 
 
 
