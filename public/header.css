@@ -15,37 +15,39 @@ header {
 }
 
 
-@supports (grid-template-columns: repeat(2, 60px)) {
-
-    header nav {
-        display: flex;
-    }
-
-    header ul {
-        display: grid;
-        grid-template-columns: repeat(2, 60px);
-        grid-template-rows: repeat(2, 60px) ;
-        translate: 100%;
-    }
+header nav {
+    translate: 100%;
 }
 
 header li {
     display: none;
-    list-style: none;
 }
 
-.nav-open {
+.nav-open  {
     translate: 0%;
+    margin-left: auto;
+    position: relative;
+    z-index: 9;
 }
 
-.nav-open ul {
-    margin-left: auto;
+@supports (grid-template-columns: repeat(2, 60px)) {
+
+    header .nav-open {
+        display: block;
+        width: fit-content;
+    }
+
+    header .nav-open ul {
+        display: grid;
+        grid-template-columns: repeat(2, 60px);
+        grid-template-rows: repeat(2, 60px);
+        gap: 20px;
+    }
 }
 
 .nav-open li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    list-style: none;
     color: var(--main-color-normal);
     background: var(--secondary-color-light);
     height: 60px;
@@ -77,8 +79,8 @@ header li {
 
 .menu {
     display: grid;
-    grid-template-rows: repeat(4, 11px);
-    grid-template-columns: repeat(4, 11px);
+    grid-template-rows: repeat(4, 11.2px);
+    grid-template-columns: repeat(4, 11.2px);
     margin-left: auto;
     row-gap: 5px;
     column-gap: 5px;
@@ -86,7 +88,7 @@ header li {
     border: none;
     height: 60px;
     width: 60px;
-    border-radius: 100%;
+    border-radius: 50%;
     transition: 0.2s ease-in;
 }
 
@@ -103,8 +105,8 @@ header li {
 .menu span {
     display: block;
     background: var(--main-color-normal);
-    height: 11px;
-    width: 11px;
+    height: 11.2px;
+    width: 11.2px;
     border-radius: 100%;
 }
 
@@ -136,6 +138,9 @@ header li {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 20px;
+    z-index: 10;
 }
 
 .menu-open .menu span {
