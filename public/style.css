@@ -1,47 +1,46 @@
  
- html {
+html {
     height: 100vh;
     overflow-x: hidden;
-    ::-webkit-scrollbar {
-        display: none;
-    }
 
     * {
         margin: 0;
         padding: 0; }}
 
-section, footer {
+body  {
     padding-inline: 2vw;
 }
 
 
-.personal, .portfolio {
+.personal {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     background-color: var(--main-color-normal);
-    padding-bottom: 300px;
+    padding-bottom: 20em;
+}
 
-    h1 {
-        border-right: 0.1vw solid var(--secondary-color-light);
-        color: var(--secondary-color-light);
-        animation: typing 1s steps(15) forwards,
-        blink 0.5s step-end infinite;
-        overflow: hidden;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-    }
+#home-typer {
+    display: inline-block;
+    color: var(--secondary-color-light);
+    overflow: hidden; /* Ensures text doesn't overflow */
+    white-space: nowrap; /* Keeps text on a single line */
+    border-right: 2px solid var(--secondary-color-light); /* Simulates the cursor */
+    animation: typing 1s steps(40, end) forwards, blink 0.5s step-end infinite;
+}
 
-    h2 {
-        width: 0;
-        border-right: 0.1vw solid var(--secondary-color-light);
-        color: var(--secondary-color-light);
-        animation: typing-two 1.8s steps(37) forwards,
-        blink 0.5s step-end infinite, border;
-        animation-delay: 1s;
-        overflow: hidden;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-    }
+
+#home-typer-h2 {
+    display: flex;
+    width: 0;
+    border-right: 0.1vw solid var(--secondary-color-light);
+    color: var(--secondary-color-light);
+    animation: typing-two 1.8s steps(37) forwards,
+    blink 0.5s step-end infinite, border;
+    animation-delay: 1s;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 @keyframes typing {
@@ -51,11 +50,16 @@ section, footer {
 
 @keyframes typing-two {
     from { width: 0; }
-    to { width: 87%; }
+    to { width: 100%; }
 }
 
 @keyframes blink {
     50% { border-color: transparent}
+}
+
+.typewriter.done {
+    animation: none; /* Stops all animations */
+    border: none; /* Removes the cursor */
 }
 
 .information {

@@ -13,22 +13,18 @@ section, footer {
 }
 
 
-h1 {
+/* h1 {
     color: var(--secondary-color-light);
     border-right: 0.1vw solid var(--secondary-color-light);
     animation: typing 0.7s steps(11) forwards, blink 0.5s step-end infinite;
     overflow: hidden;
     flex-wrap: nowrap;
     white-space: nowrap;
-}
+} */
 
-@keyframes typing {
+@keyframes typing-voortgang {
     from { width: 0; }
     to { width: 69%; }
-}
-
-@keyframes blink {
-    50% { border-color: transparent}
 }
 
 section:nth-of-type(2) {
