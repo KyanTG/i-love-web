@@ -53,3 +53,15 @@ showMoreArticle.forEach(element => {
     }
   }
 });
+
+
+
+const homeTyper = document.querySelector('#home-typer');
+homeTyper.addEventListener('animationend', () => {
+    homeTyper.classList.add('done');
+});
+
+const homeTyperTwo = document.querySelector('#home-typer-h2');
+homeTyperTwo.addEventListener('animationend', () => {
+    homeTyperTwo.classList.add('done');
+});

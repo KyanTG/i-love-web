@@ -26,7 +26,7 @@ body  {
     overflow: hidden; /* Ensures text doesn't overflow */
     white-space: nowrap; /* Keeps text on a single line */
     border-right: 2px solid var(--secondary-color-light); /* Simulates the cursor */
-    animation: typing 1s steps(40, end) forwards, blink 0.5s step-end infinite;
+    animation: typing 1s steps(13) forwards;
 }
 
 
@@ -35,8 +35,7 @@ body  {
     width: 0;
     border-right: 0.1vw solid var(--secondary-color-light);
     color: var(--secondary-color-light);
-    animation: typing-two 1.8s steps(37) forwards,
-    blink 0.5s step-end infinite, border;
+    animation: typing-two 3s steps(37) forwards;
     animation-delay: 1s;
     overflow: hidden;
     flex-wrap: nowrap;
@@ -45,21 +44,25 @@ body  {
 
 @keyframes typing {
     from { width: 0; }
-    to { width: 100%; }
+    to { width: 87.5%; }
 }
 
 @keyframes typing-two {
     from { width: 0; }
-    to { width: 100%; }
+    to { width: 76%; }
 }
 
-@keyframes blink {
-    50% { border-color: transparent}
-}
-
-.typewriter.done {
+#home-typer.done, #home-typer-h2.done {
     animation: none; /* Stops all animations */
     border: none; /* Removes the cursor */
+}
+
+#home-typer-h2.done {
+    width: 76%;
+}
+
+#home-typer.done {
+    width: 87.5%;
 }
 
 .information {
