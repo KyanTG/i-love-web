@@ -6,6 +6,8 @@ import { marked } from 'marked';
 
 import { readdir, readFile } from 'node:fs/promises'
 
+import { gsap } from "gsap";
+
 const app = express()
 
 const engine = new Liquid();

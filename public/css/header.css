@@ -45,27 +45,27 @@ header a {
 }
 
 header li:nth-of-type(1) {
-    transform: translate(0, 0); /* Default position */
+    transform: translate(0, 0); 
 }
 
 header li:nth-of-type(2) {
-    transform: translate(0, -60px); /* Default position */
+    transform: translate(0, -60px); 
 }
 
 header li:nth-of-type(3) {
-    transform: translate(0, -120px); /* Default position */
+    transform: translate(0, -120px); 
 }
 
 .nav-open li:nth-of-type(1) {
-    transform: translate(-80px, 0); /* Move to the left */
+    transform: translate(-80px, 0); 
 }
 
 .nav-open li:nth-of-type(2) {
-    transform: translate(-80px, 20px); /* Move to the left */
+    transform: translate(-80px, 20px); 
 }
 
 .nav-open li:nth-of-type(3) {
-    transform: translate(0px, -40px); /* Move to the left */
+    transform: translate(0px, -40px); 
 }
 
 .menu {

@@ -27,7 +27,7 @@ section, footer {
     to { width: 69%; }
 }
 
-section:nth-of-type(2) {
+/* section:nth-of-type(2) {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
     justify-content: flex-start;
@@ -79,7 +79,7 @@ section:nth-of-type(2) {
             }
         }
     }
-}
+} */
 
 .vragenlijstcontent {
     display: flex;

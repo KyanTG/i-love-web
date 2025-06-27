@@ -23,9 +23,9 @@ body  {
 #home-typer {
     display: inline-block;
     color: var(--secondary-color-light);
-    overflow: hidden; /* Ensures text doesn't overflow */
-    white-space: nowrap; /* Keeps text on a single line */
-    border-right: 2px solid var(--secondary-color-light); /* Simulates the cursor */
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: 2px solid var(--secondary-color-light); 
     animation: typing 1s steps(15) forwards;
 }
 
@@ -53,8 +53,8 @@ body  {
 }
 
 #home-typer.done, #home-typer-h2.done {
-    animation: none; /* Stops all animations */
-    border: none; /* Removes the cursor */
+    animation: none; 
+    border: none; 
 }
 
 #home-typer-h2.done {

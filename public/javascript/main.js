@@ -36,22 +36,22 @@ const sluitB = document.querySelector(".menu-open");
 // Voortgangs pagina divjes bij click info laten zien
 
 
-let showMoreArticle = document.querySelectorAll(".show-more-article");
+// let showMoreArticle = document.querySelectorAll(".show-more-article");
 
-showMoreArticle.forEach(element => {
-  let BTNShow = element.querySelector(".show-more");
+// showMoreArticle.forEach(element => {
+//   let BTNShow = element.querySelector(".show-more");
 
-  BTNShow.onclick = function() {
-    element.classList.toggle("div-show-p");
-    BTNShow.classList.toggle("button-active")
-    if(BTNShow.classList.contains("button-active")) {
-      BTNShow.innerHTML = "Show Less"; 
-    }
-    else {
-      BTNShow.innerHTML = "Show More"; 
-    }
-  }
-});
+//   BTNShow.onclick = function() {
+//     element.classList.toggle("div-show-p");
+//     BTNShow.classList.toggle("button-active")
+//     if(BTNShow.classList.contains("button-active")) {
+//       BTNShow.innerHTML = "Show Less"; 
+//     }
+//     else {
+//       BTNShow.innerHTML = "Show More"; 
+//     }
+//   }
+// });
 
 // typewriter effects when they are done
 
