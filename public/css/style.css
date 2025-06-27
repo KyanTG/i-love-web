@@ -20,50 +20,6 @@ body  {
     padding-bottom: 20em;
 }
 
-#home-typer {
-    display: inline-block;
-    color: var(--secondary-color-light);
-    overflow: hidden; 
-    white-space: nowrap; 
-    border-right: 2px solid var(--secondary-color-light); 
-    animation: typing 1s steps(15) forwards;
-}
-
-
-#home-typer-h2 {
-    display: flex;
-    width: 0;
-    border-right: 0.1vw solid var(--secondary-color-light);
-    color: var(--secondary-color-light);
-    animation: typing-two 3s steps(37) forwards;
-    animation-delay: 1s;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 87.5%; }
-}
-
-@keyframes typing-two {
-    from { width: 0; }
-    to { width: 76%; }
-}
-
-#home-typer.done, #home-typer-h2.done {
-    animation: none; 
-    border: none; 
-}
-
-#home-typer-h2.done {
-    width: 76%;
-}
-
-#home-typer.done {
-    width: 87.5%;
-}
 
 /* .information {
     background-color: var(--main-color-normal);

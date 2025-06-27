@@ -55,12 +55,12 @@ const sluitB = document.querySelector(".menu-open");
 
 // typewriter effects when they are done
 
-const homeTyper = document.querySelector('#home-typer');
+const homeTyper = document.querySelector('h1');
 homeTyper.addEventListener('animationend', () => {
     homeTyper.classList.add('done');
 });
 
-const homeTyperTwo = document.querySelector('#home-typer-h2');
+const homeTyperTwo = document.querySelector('h2');
 homeTyperTwo.addEventListener('animationend', () => {
     homeTyperTwo.classList.add('done');
 });
