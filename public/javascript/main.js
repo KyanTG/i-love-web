@@ -33,7 +33,6 @@ function openM() {
 
 const sluitB = document.querySelector(".menu-open");
 
-
 // Voortgangs pagina divjes bij click info laten zien
 
 
@@ -54,7 +53,7 @@ showMoreArticle.forEach(element => {
   }
 });
 
-
+// typewriter effects when they are done
 
 const homeTyper = document.querySelector('#home-typer');
 homeTyper.addEventListener('animationend', () => {

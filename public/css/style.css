@@ -65,7 +65,7 @@ body  {
     width: 87.5%;
 }
 
-.information {
+/* .information {
     background-color: var(--main-color-normal);
     padding-top: 10vw;
     padding-bottom: 300px;
@@ -131,9 +131,9 @@ body  {
             color: var(--secondary-color-light);
         }
     }
-}
+} */
 
-.top {
+/* .top {
     padding-top: 10vw;
     padding-bottom: 30vw;
 }
@@ -146,7 +146,7 @@ body  {
 @keyframes shoot-in-right {
     from { margin-left: 100%; }
     to { margin-left: 27.6%; }
-}
+} */
 
 footer {
     display: flex;
