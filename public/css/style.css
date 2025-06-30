@@ -1,6 +1,5 @@
  
 html {
-    height: 100vh;
     overflow-x: hidden;
 
     * {
@@ -9,6 +8,7 @@ html {
 
 body  {
     padding-inline: 2vw;
+    height: 200vh;
 }
 
 
@@ -17,7 +17,8 @@ body  {
     align-items: flex-start;
     flex-direction: column;
     background-color: var(--main-color-normal);
-    padding-bottom: 20em;
+    padding-bottom: 20rem;
+    padding-top: 8rem;
 }
 
 
