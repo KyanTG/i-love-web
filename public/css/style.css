@@ -110,15 +110,20 @@ footer {
     column-gap: 1vw;
     background-color: var(--main-color-normal);
     padding-bottom: 1000px;
-
-    a:hover {
-        scale: 1.1;
-        transition: 0.2s ease;
-    }
-
-    img {
-        width: 6vw;
-        height: 6vw;
-    }
 }
+
+footer a:hover {
+    scale: 1.1;
+    transition: 0.2s ease;
+}
+
+footer img {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50px;
+    border: 5px solid var(--secondary-color-light);
+}
+
+
+
     
