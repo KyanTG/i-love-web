@@ -8,6 +8,7 @@ header {
     padding-inline: 20px;
     padding-block: 20px;
     background-color:var(--main-color-normal);
+    border: 3px solid var(--main-color-normal);
     border-radius: 50px;
     transition: all 0.3s ease;
 }
