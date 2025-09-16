@@ -1,4 +1,4 @@
-h1 {
+.h1-typer-style {
     display: block;
     border-right: 2px solid var(--secondary-color-light); 
     color: var(--secondary-color-light);
@@ -6,7 +6,7 @@ h1 {
     white-space: nowrap; 
 }
 
-h2 {
+.h2-typer-style {
     display: block;
     width: 0;
     border-right: 0.1vw solid var(--secondary-color-light);
@@ -17,11 +17,11 @@ h2 {
 
 /* Homepage */
 
-#home-typer {
+.home-typer-h1 {
     animation: typing-home 1s steps(15) forwards;
 }
 
-#home-typer-h2 {
+.home-typer-h2 {
     animation: typing-home-two 3s steps(37) forwards;
     animation-delay: 1s;
 }
@@ -36,16 +36,16 @@ h2 {
     to { width: 76%; }
 }
 
-#home-typer.done, #home-typer-h2.done {
+.home-typer-h1.done, .home-typer-h2.done {
     animation: none; 
     border: none; 
 }
 
-#home-typer-h2.done {
+.home-typer-h2.done {
     width: 76%;
 }
 
-#home-typer.done {
+.home-typer-h1.done {
     width: 87.5%;
 }
 
