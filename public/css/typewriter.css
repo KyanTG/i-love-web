@@ -2,6 +2,7 @@
     display: block;
     border-right: 2px solid var(--secondary-color-light); 
     color: var(--secondary-color-light);
+    font-size: 9vw;
     overflow: hidden; 
     white-space: nowrap; 
 }
@@ -11,6 +12,7 @@
     width: 0;
     border-right: 0.1vw solid var(--secondary-color-light);
     color: var(--secondary-color-light);
+    font-size: 3.5vw;
     overflow: hidden;
     white-space: nowrap;
 }
