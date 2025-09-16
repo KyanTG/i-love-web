@@ -30,6 +30,7 @@ p {
 
 a {
     font-family: var(--main-font-regular);
+    font-weight: 600;
     /* font-size: 16px;  */
 }
 

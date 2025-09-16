@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -63,3 +64,31 @@
     font-size: 0.8rem;
 }
 
+.article-tekst {
+    color: var(--secondary-color-light);
+    max-width: 220px;
+    max-height: 240px;
+    font-size: 0.8rem;
+}
+
+.article-portfolio-tekst {
+    margin-top: 1rem;
+    max-width: 170px;
+}
+
+#article-portfolio-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--secondary-color-light);
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    font-size: 1rem;
+    transition: scale 0.2s ease-out;
+}
+
+#article-portfolio-link:hover {
+    scale: 1.1;
+}
