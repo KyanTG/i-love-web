@@ -1,20 +1,23 @@
 /* styling horizontal scroll */
 
 .article-style {
-    width: 300px;
-    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
     border-radius: 100%;
-    background-color: var(--secondary-color-light);
     border: 10px solid var(--secondary-color-light);
 }
 
 .info-me {
     position: relative;
+    background-color: var(--secondary-color-light);
 }
 
 #foto-kyan {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 100%;
     object-fit: contain;
 }
@@ -26,12 +29,27 @@
     flex-direction: column;
     position: absolute;
     inset: auto 1em 0em;
-    height: 100px;
-    width: 260px;
+    height: 125px;
+    width: 315px;
     background-color: var(--secondary-color-light);
     border-radius: 0px 0px 250px 250px;
 }
 
 .header-article, .subheader-article {
     color: var(--main-color-normal);
+}
+
+.header-article {
+    font-size: 1.5rem;
+}
+
+.subheader-article {
+    font-size: 1.25rem;
+}
+
+.article-tekst {
+    color: var(--secondary-color-light);
+    max-width: 240px;
+    max-height: 240px;
+    font-size: 1rem;
 }
