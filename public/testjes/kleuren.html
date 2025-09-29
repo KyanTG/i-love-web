@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Olive Green</p>
+    <p>kleur 2</p>
+    <p>kleur 3</p>
+    <p>kleur 4</p>
+    <button id="HSL">Button</button>
+</body>
+</html>
+
+<style>
+
+
+    #HSL {
+        --h:100;
+        --s:50%;
+        --l:50%;
+        --a:1;
+        background: hsl(var(--h) var(--s) var(--l) / var(--a));
+
+        &:hover {
+            --l: 75%;
+        }
+
+        &:focus, &:active {
+            --s: 75%;
+        }
+    }
+    
+
+
+    p {
+        font-size: 2em;
+        color: lightgoldenrodyellow;
+    }
+
+    p:nth-of-type(1) {
+        color: #BAB86C;
+    }
+
+    p:nth-of-type(2) {
+        color: rgb(186 184 108);
+    }
+
+    p:nth-of-type(3) {
+        color: hsl(58, 36%, 58%);
+    }
+
+    p:nth-of-type(4) {
+        color: olive;
+    }
+</style>
