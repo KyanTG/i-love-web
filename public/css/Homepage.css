@@ -14,10 +14,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
+    padding: 0.5rem;
     border-radius: 100%;
-    border: 10px solid var(--secondary-color-light);
+    border: 5px solid var(--secondary-color-light);
 }
 
 .info-me {
@@ -26,8 +27,8 @@
 }
 
 #foto-kyan {
-    width: 300px;
-    height: 300px;
+    width: 275px;
+    height: 275px;
     border-radius: 100%;
     object-fit: contain;
 }
@@ -35,52 +36,41 @@
 #article-kyan {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     position: absolute;
-    inset: auto 1em 0em;
-    height: 100px;
-    width: 265px;
+    inset: auto 2.6em 0em;
+    height: 80px;
+    width: 210px;
     background-color: var(--secondary-color-light);
     border-radius: 0px 0px 250px 250px;
 }
 
-.header-article, .subheader-article {
+.header-article {
     color: var(--main-color-normal);
+    margin-top: 0.25rem;    
 }
 
 .header-article {
-    font-size: 1.5rem;
-}
-
-.subheader-article {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
 }
 
 .article-tekst {
     color: var(--secondary-color-light);
-    max-width: 220px;
-    max-height: 240px;
-    font-size: 0.8rem;
-}
-
-.article-tekst {
-    color: var(--secondary-color-light);
-    max-width: 220px;
-    max-height: 240px;
-    font-size: 0.8rem;
+    max-width: 200px;
+    font-size: 0.9rem;
+    margin-left: 1rem;
 }
 
 .article-portfolio-tekst {
+    font-size: 1rem;
+    margin-left: 0;
     margin-top: 1rem;
     max-width: 170px;
 }
 
 #article-portfolio-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    font-weight: 700;
     margin-top: 1rem;
     color: var(--secondary-color-light);
     text-decoration: underline;
