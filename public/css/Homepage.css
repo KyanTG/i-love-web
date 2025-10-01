@@ -5,8 +5,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 80px;
-    padding-top: 160px;
+    gap: 5em;
+    padding-top: 10em;
 }
 
 .article-style {
@@ -14,11 +14,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 275px;
-    height: 275px;
-    padding: 0.5rem;
+    width: 17.188em;
+    height: 17.188em;
+    padding: 0.5em;
     border-radius: 100%;
     border: 5px solid var(--secondary-color-light);
+
+    @media ( min-width: 768px ) {
+        width: 25em;
+        height: 25em;
+        border: 10px solid var(--secondary-color-light);
+    }
 }
 
 .info-me {
@@ -49,9 +55,6 @@
 .header-article {
     color: var(--main-color-normal);
     margin-top: 0.25rem;    
-}
-
-.header-article {
     font-size: 1.4rem;
 }
 
@@ -59,6 +62,7 @@
     color: var(--secondary-color-light);
     max-width: 200px;
     font-size: 0.9rem;
+    line-height: 1.4;
     margin-left: 1rem;
 }
 

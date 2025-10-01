@@ -1,31 +1,42 @@
 .h1-typer-style {
-    display: block;
     border-right: 2px solid var(--secondary-color-light); 
     color: var(--secondary-color-light);
-    font-size: 9vw;
+    font-size: 10vw;
     overflow: hidden; 
     white-space: nowrap; 
 }
 
 .h2-typer-style {
-    display: block;
     width: 0;
     border-right: 0.1vw solid var(--secondary-color-light);
     color: var(--secondary-color-light);
-    font-size: 3.5vw;
+    font-size: 1em;
     overflow: hidden;
     white-space: nowrap;
+
+    @media (min-width: 458px ) {
+        font-size: 3.5vw;
+    }
 }
 
 /* Homepage */
 
 .home-typer-h1 {
-    animation: typing-home 1s steps(15) forwards;
+    animation: typing-home-mobile 1s steps(15) forwards;
+
+    @media (min-width: 458px ) {
+        animation: typing-home 1s steps(15) forwards;
+    }
 }
 
 .home-typer-h2 {
-    animation: typing-home-two 3s steps(37) forwards;
+    animation: typing-home-two-mobile 3s steps(37) forwards;
     animation-delay: 1s;
+
+    @media ( min-width: 458px ) {
+        animation: typing-home-two 3s steps(37) forwards;
+        animation-delay: 1s;
+    }
 }
 
 @keyframes typing-home {
@@ -33,9 +44,19 @@
     to { width: 87.5%; }
 }
 
+@keyframes typing-home-mobile {
+    from { width: 0; }
+    to { width: 96%; }
+}
+
 @keyframes typing-home-two {
     from { width: 0; }
     to { width: 76%; }
+}
+
+@keyframes typing-home-two-mobile {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 .home-typer-h1.done, .home-typer-h2.done {
@@ -44,11 +65,19 @@
 }
 
 .home-typer-h2.done {
-    width: 76%;
+    width: 100%;
+
+    @media ( min-width: 458px ) {
+        width: 76%;
+    }
 }
 
 .home-typer-h1.done {
-    width: 87.5%;
+    width: 96%;
+
+    @media ( min-width: 458px ) {
+        width: 87.5%;
+    }
 }
 
 /* portfolio page */
