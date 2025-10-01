@@ -33,10 +33,15 @@
 }
 
 #foto-kyan {
-    width: 275px;
-    height: 275px;
+    width: 17.188em;
+    height: 17.188em;
     border-radius: 100%;
     object-fit: contain;
+
+    @media ( min-width: 768px ) {
+        width: 25em;
+        height: 25em;
+    }
 }
 
 #article-kyan {
@@ -50,20 +55,36 @@
     width: 210px;
     background-color: var(--secondary-color-light);
     border-radius: 0px 0px 250px 250px;
+
+    @media ( min-width: 768px ) {
+        inset: auto 5em 0em;
+        height: 100px;
+        width: 260px;
+    }
 }
 
 .header-article {
     color: var(--main-color-normal);
-    margin-top: 0.25rem;    
-    font-size: 1.4rem;
+    margin-top: 0.25em;    
+    font-size: 1.4em;
+
+    @media ( min-width: 768px ) {
+        margin-top: 0.5em;
+        font-size: 1.8em;
+    }
 }
 
 .article-tekst {
     color: var(--secondary-color-light);
     max-width: 200px;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     line-height: 1.4;
-    margin-left: 1rem;
+    margin-left: 1em;
+
+    @media ( min-width: 768px ) {
+        max-width: 291px;
+        font-size: 1.1em;
+    }
 }
 
 .article-portfolio-tekst {
@@ -71,6 +92,11 @@
     margin-left: 0;
     margin-top: 1rem;
     max-width: 170px;
+
+    @media ( min-width: 768px ) {
+        font-size: 1.2em;
+        max-width: 247px;
+    }
 }
 
 #article-portfolio-link {
@@ -81,6 +107,11 @@
     text-underline-offset: 0.3rem;
     font-size: 1rem;
     transition: scale 0.2s ease-out;
+
+    @media ( min-width: 768px ) {
+        width: 247px;
+        font-size: 1.3em;
+    }
 }
 
 #article-portfolio-link:hover {

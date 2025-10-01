@@ -4,6 +4,10 @@
     font-size: 10vw;
     overflow: hidden; 
     white-space: nowrap; 
+
+    @media ( min-width: 458px ) {
+        font-size: 9vw;
+    }
 }
 
 .h2-typer-style {
