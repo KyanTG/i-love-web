@@ -1,13 +1,27 @@
 /* styling horizontal scroll */
 
 
-.horizontal-scroll-sec {
+.scroll-wrap {
+    padding-block: 20em;
+    overflow: hidden; /* Prevent default scrolling */
+    position: relative;
+    background-color: var(--main-color-normal);
+    
+}
+
+/* .horizontal-scroll-sec {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 5em;
     padding-top: 10em;
-}
+} */
+
+.horizontal-scroll-sec {
+    display: flex; /* Horizontal layout */
+    gap: 50px;
+    width: 300%; /* Make it wider than the viewport */
+  }
 
 .article-style {
     display: flex;

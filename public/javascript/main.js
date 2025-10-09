@@ -60,7 +60,47 @@ homeTyper.addEventListener('animationend', () => {
     homeTyper.classList.add('done');
 });
 
+
 const homeTyperTwo = document.querySelector('h2');
 homeTyperTwo.addEventListener('animationend', () => {
     homeTyperTwo.classList.add('done');
+});
+
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// let sections = gsap.utils.toArray(".article-style");
+
+// gsap.to(sections, {
+//   xPercent: -100 * (sections.length - 1),
+//   ease: none,
+//   ScrollTrigger: {
+//     trigger: ".horizontal-scroll-sec",
+//     pin: true,
+//     scrub: 1,
+//     end: () => "+=" + document.querySelector(".horizontal-scroll-sec").offsetWidth
+//   }
+// })
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+const horizontal = document.querySelector(".horizontal-scroll-sec");
+let horizontalWidth = horizontal.offsetWidth;  
+let scrollAmount = horizontalWidth - window.innerWidth;
+
+const scroller = gsap.to(horizontal, {
+  x: -scrollAmount,
+  duration: 3,
+  ease: "none"
+});
+
+ScrollTrigger.create({
+  trigger: ".scroll-wrap",
+  start: "top top",
+  end: "+=" + scrollAmount,
+  pin: true,
+  animation: scroller,
+  scrub: 1,
+  markers: true
 });
