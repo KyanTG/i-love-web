@@ -86,11 +86,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const horizontal = document.querySelector(".horizontal-scroll-sec");
-let horizontalWidth = horizontal.offsetWidth;  
-let scrollAmount = horizontalWidth - window.innerWidth;
+// let horizontalWidth = horizontal.offsetWidth;  
+// let scrollAmount = horizontalWidth - window.innerWidth;
+
+function scrollAmount() {
+  let horizontalScrollWidth = horizontal.scrollWidth;
+  return -(horizontalScrollWidth - window.innerWidth)
+}
 
 const scroller = gsap.to(horizontal, {
-  x: -scrollAmount,
+  x: scrollAmount,
   duration: 3,
   ease: "none"
 });
@@ -98,9 +103,10 @@ const scroller = gsap.to(horizontal, {
 ScrollTrigger.create({
   trigger: ".scroll-wrap",
   start: "top top",
-  end: "+=" + scrollAmount,
+  end: () => `+=${scrollAmount() * -1}`,
   pin: true,
   animation: scroller,
   scrub: 1,
-  markers: true
+  markers: true,
+  invalidateOnRefresh: true
 });

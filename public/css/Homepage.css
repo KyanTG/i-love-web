@@ -2,25 +2,21 @@
 
 
 .scroll-wrap {
-    padding-block: 20em;
+    padding-block: 28vh;
     overflow: hidden; /* Prevent default scrolling */
     position: relative;
     background-color: var(--main-color-normal);
     
+    
 }
 
-/* .horizontal-scroll-sec {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5em;
-    padding-top: 10em;
-} */
-
 .horizontal-scroll-sec {
-    display: flex; /* Horizontal layout */
+    display: grid; /* Horizontal layout */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 50px;
     width: 300%; /* Make it wider than the viewport */
+    height: 100vh;
   }
 
 .article-style {
