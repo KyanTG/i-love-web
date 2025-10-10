@@ -1,5 +1,8 @@
 /* styling horizontal scroll */
 
+.test-room {
+    height: 100vh;
+}
 
 .scroll-wrap {
     padding-block: 28vh;
@@ -11,13 +14,11 @@
 }
 
 .horizontal-scroll-sec {
-    display: grid; /* Horizontal layout */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 50px;
-    width: 300%; /* Make it wider than the viewport */
+    display: flex;
+    width: 600vw; /* Make it wider than the viewport */
+    gap: 50vw;
     height: 100vh;
-  }
+}
 
 .article-style {
     display: flex;
