@@ -81,4 +81,50 @@
         height: 300vh;
     }
 
+    body {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+
+  details {
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    background: #f9f9f9;
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  summary::marker {
+    content: "▶ ";
+    color: #007bff;
+  }
+
+  details[open] summary::marker {
+    content: "▼ ";
+  }
+
 </style>
+
+
+<h2>Veelgestelde vragen</h2>
+
+<details>
+  <summary>Wat is een accordeon?</summary>
+  <p>Een accordeon toont of verbergt tekst als je erop klikt.</p>
+</details>
+
+<details>
+  <summary>Hoe werkt het?</summary>
+  <p>Met de HTML-tags &lt;details&gt; en &lt;summary&gt; — zonder JavaScript!</p>
+</details>
+
+<details>
+  <summary>Kan ik meerdere open hebben?</summary>
+  <p>Ja, want elke sectie werkt onafhankelijk.</p>
+</details>
