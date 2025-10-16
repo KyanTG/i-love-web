@@ -6,16 +6,14 @@
 
 .scroll-wrap {
     padding-block: 28vh;
-    overflow: hidden; /* Prevent default scrolling */
+    overflow: hidden; 
     position: relative;
     background-color: var(--main-color-normal);
-    
-    
 }
 
 .horizontal-scroll-sec {
     display: flex;
-    width: 600vw; /* Make it wider than the viewport */
+    width: 600vw; 
     gap: 50vw;
     height: 100vh;
 }
