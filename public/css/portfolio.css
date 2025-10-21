@@ -22,7 +22,7 @@
 
     @media ( min-width: 360px ) {
         height: 150px;
-        max-width: 1000px;
+        max-width: 1200px;
     }
 
     @media ( min-width: 700px ) {

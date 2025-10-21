@@ -67,6 +67,10 @@ app.get('/voortgang/:slug', async function (request, response) {
     response.render('artikel.liquid', {fileContents: markedContent})
 });
 
+app.get('/contact', async function (request, response) { 
+    response.render('contact.liquid')
+});
+
 
 
 app.set('port', process.env.PORT || 8000)
