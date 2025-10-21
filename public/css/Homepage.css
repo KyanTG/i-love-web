@@ -1,5 +1,9 @@
 /* styling horizontal scroll */
 
+.personal {
+    padding-top: 8rem;
+}
+
 .test-room {
     height: 100vh;
 }
