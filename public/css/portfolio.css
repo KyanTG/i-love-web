@@ -108,6 +108,7 @@
     background-color: var(--secondary-color-light);
     text-align: center;
     text-decoration: none;
+    transition: scale 0.2s ease;
     border-radius: 100px;
 }
 
