@@ -33,7 +33,7 @@
     border-radius: 100%;
     border: 5px solid var(--secondary-color-light);
 
-    @media ( min-width: 768px ) {
+    @media ( min-width: 700px ) {
         width: 25em;
         height: 25em;
         border: 10px solid var(--secondary-color-light);
@@ -51,7 +51,7 @@
     border-radius: 100%;
     object-fit: contain;
 
-    @media ( min-width: 768px ) {
+    @media ( min-width: 700px ) {
         width: 25em;
         height: 25em;
     }
@@ -69,7 +69,7 @@
     background-color: var(--secondary-color-light);
     border-radius: 0px 0px 250px 250px;
 
-    @media ( min-width: 768px ) {
+    @media ( min-width: 700px ) {
         inset: auto 5em 0em;
         height: 100px;
         width: 260px;
@@ -81,7 +81,7 @@
     margin-top: 0.25em;    
     font-size: 1.4em;
 
-    @media ( min-width: 768px ) {
+    @media ( min-width: 700px ) {
         margin-top: 0.5em;
         font-size: 1.8em;
     }
@@ -94,7 +94,7 @@
     line-height: 1.4;
     margin-left: 1em;
 
-    @media ( min-width: 768px ) {
+    @media ( min-width: 700px ) {
         max-width: 291px;
         font-size: 1.1em;
     }
@@ -106,7 +106,7 @@
     margin-top: 1rem;
     max-width: 170px;
 
-    @media ( min-width: 768px ) {
+    @media ( min-width: 700px ) {
         font-size: 1.2em;
         max-width: 247px;
     }
@@ -121,7 +121,7 @@
     font-size: 1rem;
     transition: scale 0.2s ease-out;
 
-    @media ( min-width: 768px ) {
+    @media ( min-width: 700px ) {
         width: 247px;
         font-size: 1.3em;
     }

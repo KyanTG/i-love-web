@@ -1,22 +1,21 @@
-
-
-
-* {
-    margin: 0;
-    padding: 0; 
-}
-
-body  {
-    padding-inline: 2vw;
+html {
     height: 100vh;
+    padding-inline: 2vw;
+
+    * {
+        margin: 0;
+        padding: 0; 
+    }
 }
 
+body {
+    background-color: var(--main-color-normal);
+}
 
 footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--main-color-normal);
     height: 14vw;
 }
 
