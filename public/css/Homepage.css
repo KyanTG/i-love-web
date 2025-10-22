@@ -11,14 +11,21 @@
 .scroll-wrap {
     padding-block: 28vh;
     overflow: hidden; 
-    position: relative;
     background-color: var(--main-color-normal);
 }
 
 .horizontal-scroll-sec {
     display: flex;
+    flex-direction: row;
     width: 600vw; 
-    gap: 50vw;
+    height: 100vh;
+}
+
+.article-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
     height: 100vh;
 }
 
