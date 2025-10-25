@@ -2,14 +2,12 @@
 
 {% render 'partials/header.liquid' %}
 
-<section class="portfolio">
+<section class="portfolio padding-sec">
   <h1 class="portfolio-typer-h1 h1-typer-style">portfolio</h1>
   <h2 class="portfolio-info">Welkom op mijn portfolio! Hier zijn al mijn tot nu toe gemaakte projecten te zien.</h2>
 </section>
 
-
-
-<section class="portfolio-showcase">
+<section class="portfolio-showcase padding-sec">
   
   <article class="informaat article-portfolio">
     <div class="portfolio-img-wrapper">
@@ -17,20 +15,20 @@
     </div>
     {% comment %} <p>Website ontworpen & ontwikkeld met Figma, HTML, CSS en Javascript.</p> {% endcomment %}
     <nav class="link-nav">
-      <a class="link-style" href="/informaat">meer informatie</a>
-      <a class="link-style" href="https://kyantg.github.io/the-startup-responsive-interactive-website/Informaat/informaat.html">website link</a>
-      <a class="link-style" href="https://github.com/KyanTG/the-startup-responsive-interactive-website">github link</a>
+      <a class="link-style" href="/portfolio/informaat">meer informatie</a>
+      <a class="link-style" href="https://kyantg.github.io/the-startup-responsive-interactive-website/Informaat/informaat.html" target="_blank">website link</a>
+      <a class="link-style" href="https://github.com/KyanTG/the-startup-responsive-interactive-website" target="_blank">github link</a>
     </nav>
   </article>
 
   <article class="mediahuis article-portfolio">
     <div class="portfolio-img-wrapper">
-      <img class="logo-veronica logo" src="/assets/logo-veronica.svg" alt="logo van radio veronica" loading="lazy">
+      <img class="logo-veronica logo" src="/assets/logo-mediahuis.png" alt="logo van mediahuis" loading="lazy">
     </div>
     <nav class="link-nav">
-      <a class="link-style" href="/mediahuis">meer informatie</a>
-      <a class="link-style" href="https://pleasurable-ui-1yqs.onrender.com/radio-veronica">website link</a>
-      <a class="link-style" href="https://github.com/ArmanVD/pleasurable-ui">github link</a>
+      <a class="link-style" href="/portfolio/mediahuis">meer informatie</a>
+      <a class="link-style" href="https://pleasurable-ui-1yqs.onrender.com/radio-veronica" target="_blank">website link</a>
+      <a class="link-style" href="https://github.com/ArmanVD/pleasurable-ui" target="_blank">github link</a>
     </nav>
   </article>
 
@@ -39,9 +37,9 @@
       <img class="logo-embassy-of-the-free-mind logo" src="/assets/logo-embassy-of-the-free-mind.png" alt="logo van embassy of the free mind" loading="lazy">
     </div>
     <nav class="link-nav">
-      <a class="link-style" href="/embassy-of-the-free-mind">meer informatie</a>
-      <a class="link-style" href="https://proof-of-concept-cu3y.onrender.com/">website link</a>
-      <a class="link-style" href="https://github.com/KyanTG/proof-of-concept">github link</a>
+      <a class="link-style" href="/portfolio/embassy-of-the-free-mind">meer informatie</a>
+      <a class="link-style" href="https://proof-of-concept-cu3y.onrender.com/" target="_blank">website link</a>
+      <a class="link-style" href="https://github.com/KyanTG/proof-of-concept" target="_blank">github link</a>
     </nav>
   </article>
 
@@ -55,6 +53,7 @@
   </article>
 </section>
 
+{% render 'partials/footer.liquid' %}
 
 
 

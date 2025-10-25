@@ -1,11 +1,14 @@
 html {
     height: 100vh;
-    padding-inline: 2vw;
 
     * {
         margin: 0;
         padding: 0; 
     }
+}
+
+.padding-sec {
+    padding-inline: 2vw;
 }
 
 body {
