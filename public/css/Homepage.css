@@ -4,12 +4,7 @@
     padding-top: 8rem;
 }
 
-.test-room {
-    height: 100vh;
-}
-
 .scroll-wrap {
-    padding-block: 28vh;
     overflow: hidden; 
     background-color: var(--main-color-normal);
 }
@@ -17,7 +12,7 @@
 .horizontal-scroll-sec {
     display: flex;
     flex-direction: row;
-    width: 600vw; 
+    width: 500vw; 
     height: 100vh;
 }
 
@@ -137,3 +132,4 @@
 #article-portfolio-link:hover {
     scale: 1.1;
 }
+

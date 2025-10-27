@@ -67,27 +67,10 @@ homeTyperTwo.addEventListener('animationend', () => {
 });
 
 
-// gsap.registerPlugin(ScrollTrigger);
-
-// let sections = gsap.utils.toArray(".article-style");
-
-// gsap.to(sections, {
-//   xPercent: -100 * (sections.length - 1),
-//   ease: none,
-//   ScrollTrigger: {
-//     trigger: ".horizontal-scroll-sec",
-//     pin: true,
-//     scrub: 1,
-//     end: () => "+=" + document.querySelector(".horizontal-scroll-sec").offsetWidth
-//   }
-// })
-
 gsap.registerPlugin(ScrollTrigger);
 
 
 const horizontal = document.querySelector(".horizontal-scroll-sec");
-// let horizontalWidth = horizontal.offsetWidth;  
-// let scrollAmount = horizontalWidth - window.innerWidth;
 
 function scrollAmount() {
   let horizontalScrollWidth = horizontal.scrollWidth;
@@ -102,11 +85,67 @@ const scroller = gsap.to(horizontal, {
 
 ScrollTrigger.create({
   trigger: ".scroll-wrap",
-  start: "top top",
+  start: "top",
   end: () => `+=${scrollAmount() * -1}`,
   pin: true,
   animation: scroller,
   scrub: 1,
-  markers: true,
+  // markers: true,
   invalidateOnRefresh: true
+});
+
+gsap.from(".article-wrapper-two", {
+  y: 200,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".article-wrapper-two",
+    containerAnimation: scroller,
+    start: "left center",
+    end: "center center",
+    scrub: true,
+  }
+});
+
+gsap.from(".article-wrapper-three", {
+  y: -200,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".article-wrapper-three",
+    containerAnimation: scroller,
+    start: "left center",
+    end: "center center",
+    scrub: true,
+  }
+});
+
+gsap.from(".article-wrapper-four", {
+  y: 300,
+  opacity: 0,
+  duration: 1,
+  ease: "rough",
+  scrollTrigger: {
+    trigger: ".article-wrapper-four",
+    containerAnimation: scroller,
+    start: "left center",
+    end: "center center",
+    scrub: true,
+  }
+});
+
+gsap.from(".article-wrapper-five", {
+  y: -300,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".article-wrapper-five",
+    containerAnimation: scroller,
+    start: "left center",
+    end: "center center",
+    scrub: true,
+  }
 });
