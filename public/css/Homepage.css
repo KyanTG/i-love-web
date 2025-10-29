@@ -40,6 +40,18 @@
         height: 25em;
         border: 10px solid var(--secondary-color-light);
     }
+
+    @media ( min-width: 1000px ) {
+        width: 30em;
+        height: 30em;
+        border: 12.5px solid var(--secondary-color-light);
+    }
+
+    @media ( min-width: 1300px ) {
+        height: 35em;
+        width: 35em;
+        border: 15px solid var(--secondary-color-light);
+    }
 }
 
 .info-me {
@@ -56,6 +68,16 @@
     @media ( min-width: 700px ) {
         width: 25em;
         height: 25em;
+    }
+
+    @media ( min-width: 1000px ) {
+        width: 30em;
+        height: 30em;
+    }
+
+    @media ( min-width: 1300px ) {
+        width: 35em;
+        height: 35em;
     }
 }
 
@@ -76,6 +98,17 @@
         height: 100px;
         width: 260px;
     }
+
+    @media ( min-width: 1000px ) {
+        height: 120px;
+        width: 340px;
+    }
+
+    @media ( min-width: 1300px ) {
+        inset: auto 6em 0em;
+        height: 140px;
+        width: 380px;
+    }
 }
 
 .header-article {
@@ -87,6 +120,14 @@
         margin-top: 0.5em;
         font-size: 1.8em;
     }
+
+    @media ( min-width: 1000px ) {
+        font-size: 2em;
+    }
+
+    @media ( min-width: 1300px ) {
+        font-size: 2.2em;
+    }
 }
 
 .article-tekst {
@@ -97,35 +138,65 @@
     margin-left: 1em;
 
     @media ( min-width: 700px ) {
-        max-width: 291px;
+        max-width: 300px;
         font-size: 1.1em;
+    }
+
+    @media ( min-width: 1000px ) {
+        max-width: 350px;
+        font-size: 1.3em;
+    }
+
+    @media ( min-width: 1300px ) {
+        max-width: 400px;
+        font-size: 1.5em;
     }
 }
 
 .article-portfolio-tekst {
+    max-width: 170px;
     font-size: 1rem;
     margin-left: 0;
     margin-top: 1rem;
-    max-width: 170px;
 
     @media ( min-width: 700px ) {
+        max-width: 250px;
         font-size: 1.2em;
-        max-width: 247px;
+    }
+
+    @media ( min-width: 1000px ) {
+        max-width: 300px;
+        font-size: 1.3em;
+    }
+
+    @media ( min-width: 1300px ) {
+        max-width: 350px;
+        font-size: 1.5em;
     }
 }
 
 #article-portfolio-link {
     font-weight: 700;
-    margin-top: 1rem;
-    color: var(--secondary-color-light);
+    font-size: 1rem;
     text-decoration: underline;
     text-underline-offset: 0.3rem;
-    font-size: 1rem;
+    margin-top: 1rem;
+    color: var(--secondary-color-light);
     transition: scale 0.2s ease-out;
 
     @media ( min-width: 700px ) {
-        width: 247px;
+        width: 250px;
         font-size: 1.3em;
+    }
+
+    @media ( min-width: 1000px ) {
+        width: 300px;
+        font-size: 1.5em;
+    }
+
+    @media ( min-width: 1300px ) {
+        width: 350px;
+        font-size: 1.7em;
     }
 }
 
