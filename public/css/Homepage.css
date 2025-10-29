@@ -7,6 +7,7 @@
 .scroll-wrap {
     overflow: hidden; 
     background-color: var(--main-color-normal);
+    margin-block: 34vh;
 }
 
 .horizontal-scroll-sec {

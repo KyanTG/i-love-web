@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
-    padding-block: 34vh;
+    margin-block: 34vh;
 }
 
 .portfolio-info {
