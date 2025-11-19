@@ -20,9 +20,11 @@ header {
 
 header nav ul {
     display: grid;
+    visibility: hidden;
 }
 
 .nav-open ul {
+    visibility: visible;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;

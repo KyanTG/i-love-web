@@ -1,23 +1,3 @@
-
-// Hamburger menu
-
-// const openButton = document.querySelector(".hamburger");
-
-// openButton.addEventListener("click", openMenu);
-
-
-// function openMenu() {  
-
-//   const deNav = document.querySelector("nav");
-
-//   deNav.classList.toggle("nav-open");
-  
-//   document.body.classList.toggle('hamburger-open'); }
-
-// const sluitButton = document.querySelector(".hamburger-open");
-
-// hamburger creative
-
 const openB = document.querySelector(".menu");
 
 openB.addEventListener("click", openM);
@@ -33,27 +13,9 @@ function openM() {
 
 const sluitB = document.querySelector(".menu-open");
 
-// Voortgangs pagina divjes bij click info laten zien
-
-
-// let showMoreArticle = document.querySelectorAll(".show-more-article");
-
-// showMoreArticle.forEach(element => {
-//   let BTNShow = element.querySelector(".show-more");
-
-//   BTNShow.onclick = function() {
-//     element.classList.toggle("div-show-p");
-//     BTNShow.classList.toggle("button-active")
-//     if(BTNShow.classList.contains("button-active")) {
-//       BTNShow.innerHTML = "Show Less"; 
-//     }
-//     else {
-//       BTNShow.innerHTML = "Show More"; 
-//     }
-//   }
-// });
-
-// typewriter effects when they are done
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 const homeTyper = document.querySelector('h1');
 homeTyper.addEventListener('animationend', () => {
@@ -149,3 +111,4 @@ gsap.from(".article-wrapper-five", {
     scrub: true,
   }
 });
+
